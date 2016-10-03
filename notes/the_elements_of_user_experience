@@ -1,0 +1,187 @@
+The Elements of User Experience, de Jesse James Garrett
+
+**Définition**
+
+Expérience utilisateur (UX) : l’expérience vécue par l’utilisateur du produit quand il s’en sert.
+Design UX : association de l’esthétique et du design fonctionnel pour qu’ils fonctionnent dans un contexte donné.
+
+L’UX a historiquement souvent été ignoré sur le web, et pourtant c’est bon pour le business : 
+
+	•	contenu : si l’information est facile à trouver, l’utilisateur saura ce que vous offrez et sera plus susceptible de souscrire à vos services
+	•	fonctionnalité : si l’utilisateur arrive à comprendre comment ça fonctionne, il s’en servira tout seul et se sentira intelligent.
+
+L’UX est un avantage compétitif permettant d’influer sur l’image qu’à l’utilisateur du produit et de l’entreprise l’ayant réalisée, et c’est un élément décisif pour fidéliser l’utilisateur.
+
+Le retour sur investissement peut se calculer à partir du taux de conversion (nombre de « convertis » / nombre total de visiteurs) et d’autres non mesurables mais concrets comme l’amélioration de l’efficacité des utilisateurs.
+
+UCD : designer de bonnes expériences utilisateurs.
+
+
+
+**Etapes**
+
+L’UX est le résultat d’un certain nombre de décisions prises à chaque étape de conception.
+
+Il est important de suivre scrupuleusement l’ordre de ces étapes car si un élément important a été oublié à une étape précédente, il sera difficile de revenir en arrière, et cet oubli pourra avoir des conséquences désastreuses sur les délais et le coût du projet.
+
+Toute décision prise à une étape affecte la précédente et la suivante, c’est pourquoi il est déconseillé d’attendre que l’étape soit terminée avant de passer à la suivante. Vous pouvez arrêter de travailler sur une étape quand vous avez largement avancé l’étape qui suit.
+
+
+**Etape 1 : Définir une stratégie**
+Une bonne stratégie répond aux questions suivantes :
+	•	que souhaitons-nous tirer de ce projet ? ⇒ Objectifs projets de l’organisation
+	•	qu’est-ce que nos utilisateurs souhaitent tirer de ce projet ? ⇒ Besoins utilisateurs
+
+__Les objectifs projets__
+Ils doivent être précis mais pas trop, pour éviter de décider prématurément de solutions alors que d’autres pourraient mieux répondre à notre besoin.
+	•	Image de marque : l’utilisateur aura forcément une image de votre marque, à vous de la contrôler et de décider par avance ce que vous voulez que les utilisateurs pense de vous et de vos produits
+	•	Indicateurs de succès : valeurs de référence à atteindre après le lancement pour que le projet puisse être considéré comme une réussite. Les indicateurs dépendent du projet : nombre de visites, d’inscription, temps de visite, nombre d’appels etc... Gestion d’un projet web, de Vincent Hiard, éditions ENI
+
+__Les besoins utilisateurs__
+Il n’y a pas d’utilisateur type, ce qui complique la recherche utilisateur.
+
+Segmentation : diviser le public cible en sous-catégories de population, en se basant sur des critères démographiques (age, genre, niveau d’éducation, statut marital, salaire…) et/ou des profils psychologiques (segmentation psychographique), de sa maîtrise de l’outil informatique et d’internet, leur niveau d’expertise par-rapport au sujet abordé sur le site…
+ Ces informations permettront de décider de se focaliser sur un ou plusieurs segments cibles plus favorables. Différents segments = différents besoins.
+Dans le cas où les besoins de deux segments cibles sont en opposition, il faudra faire un choix.
+
+Recherche utilisateur : collecte de données permettant de comprendre le public cible 
+	•	informations générales (études de marché, sondages, focus group)
+	•	attitudes et perceptions générales de l’utilisateur (sondages, entretiens, focus group)
+	•	comportement face au produit (test utilisateur, enquête de terrain)
+  
+Trouvez le bon équilibre : plus les entretiens sont longs, plus ils sont détaillés, mais ne dépassez pas votre limite de temps
+	•	étude ethnographique
+	•	Analyse des tâches : observer en détail comment l’utilisateur réalise une tâche
+	•	Tests utilisateur : sur prototypes, tri par carte…
+
+⇒ Produire des personas correspondant aux segments
+
+⇒ Produire un document de stratégie bref, contenant des citations, et le partager avec l’équipe
+
+
+**Etape 2 : Définir le périmètre**
+
+Définir le périmètre projet permet de savoir :
+	•	à quel moment le projet est fini
+	•	ce qu’il n’y a pas à faire (tout de suite ou tout court) : ce qui peut éventuellement être ajouté si on est en avance, ce qui doit attendre la prochaine version ou ce qui n’y sera jamais
+
+__Spécifications fonctionnelles et Contenus requis__
+
+Ils se recoupent : le type de contenu à traiter influe sur le choix du CMS et de ses fonctionnalités, les fonctionnalités nécessitent d’écrire le texte des interfaces (messages d’erreur, boutons etc.)
+
+__Spécifications fonctionnelles__
+Les exigences peuvent être globales (branding, navigateurs et OS supportés) ou plus spécifiques à une fonctionnalité, tout dépend de la taille du produit et du degré de précision de la demande. Ces exigences émaneront des utilisateurs cibles et des commanditaires du projet, le plus simple étant de leur demander ce qu’ils veulent.
+
+En général trois types de réponses en ressortiront :
+	•	ce qu’ils veulent vraiment, généralement des bonnes idées
+	•	des choses qu’ils ne veulent pas vraiment, mais qu’ils suggèrent pour résoudre leur problème. Dans ce cas, noter le problème et envisager d’autres solutions à ce problème. S’il n’y en a pas, garder la première suggestion.
+	•	des choses qu’ils ne savaient pas qu’ils voulaient, mais qui une fois évoquées leur paraît être une excellente idée. Surviennent lors de brainstormings.
+
+Faites des brainstormings avec des personnes éloignées du projet, elles sont plus susceptibles d’apporter des idées fraîches.
+Certains pré-requis découlent de contraintes, par exemple matérielles.
+Ecrivez des scénarios pour vos personas pour essayer de vous représenter leur parcours utilisateur et trouver d’autres pré-requis.
+Analysez ce que fait la concurrence.
+Puis écrivez vos spécifications de façon claire et concise :
+	•	soyez positif, évitez l’utilisation de « Le produit ne doit pas « , « Il doit empêcher... », choisissez plutôt la formulation « Le produit doit inciter à ». Plutôt que de dire ce que l’utilisateur ne doit pas faire, décrivez ce qu’il faut faire pour que ça n’arrive pas.
+	•	soyez suffisamment spécifique pour que le lecteur ne puisse pas mal interpréter la demande
+	•	utilisez un langage objectif : « faites un site moderne » est moins objectif que « faire un site en accord avec les dernières tendances du webdesign ». Obtenir 10000 visites est plus objectif que « obtenir beaucoup de visite »
+
+__Contenus__
+Le contenu ne se limite pas au texte : image, vidéo, audio… Identifiez les types de contenus concernés par un pré-requis permet d’identifier d’avance les ressources nécessaires pour produire ce contenu.
+A ne pas confondre : format et but. Une FAQ est un format dont le but est de fournir aux utilisateurs  les réponses aux questions qu’ils se posent. Il est facile de perdre de vue le but d’un contenu, d’autant plus que d’autres formats peuvent répondre à ce but.
+Fournir une estimation de la taille des différents contenus : héberger des vidéos HD n’a pas le même impact que d’héberger des vidéos 3GP, publier de longs articles pas le même impact que de publier des brèves.   
+Déterminez tout de suite qui aura la charge de produire tel contenu. S’il n’y a personne pour s’en charger, supprimez-le de la liste. 
+Le contenu est un vrai travail : il doit être produit et maintenu. Définissez la fréquence de mise à jour de chaque contenu, et faites un compromis entre les attentes utilisateurs (généralement du temps réel) et ce que vous pouvez vous permettre.
+Définissez la cible de chaque contenu si votre site concerne plusieurs personnes, cela vous permettra d’envisager par avance comment présenter ce contenu.
+Si du contenu existe déjà, faites un inventaire de contenu sous forme de feuille de calcul, et laissez-le à disposition de chacun.
+
+__Priorisation__
+Un objectif peut être rempli par plusieurs exigences, une exigence peut servir plusieurs objectifs, ce qui rend la priorisation complexe.
+Trois critères prévalent : l’exigence comble un besoin utilisateur + un objectif projet + est faisable techniquement et avec les ressources et les délais impartis. S’il y a uniquement une contrainte de temps, on repousse cette fonctionnalité à la version suivante. S’il y a une contrainte de ressources, on les met de côté en attendant la prochaine ressource.
+Selon le contexte projet certaines incompatibilités peuvent apparaître et nécessiteront de peser le pour et le contre. Par exemple les utilisateurs aimeraient bien se loguer avec un seul identifiant / mot de passe pour tous les services proposés, mais vous avez plusieurs bases de données. Selon le temps et les ressources disponibles vous devez décider s’il vaut mieux tenter une fusion des bases ou alors de s’épargner ce travail.
+Si une fonctionnalité ne rentre pas dans les objectifs ou besoins utilisateurs mais qu’il reste selon vous une bonne idée, réétudiez votre stratégie, il se peut que vous ayez oublié quelque chose.
+
+
+**Etape 3 : Définir la structure**
+
+Définir comment présenter à l’utilisateur les options disponibles.
+
+__Design d’interaction__
+Présentation des options pour réaliser une tâche, en se basant sur l’observation du comportement de l’utilisateur et sur ses modèles conceptuels. On adapte les interfaces à l’humain, ce n’est plus à l’humain de s’adapter.
+Modèle conceptuel : ce que l’utilisateur imagine implicitement du fonctionnement de notre système. Par exemple dans un eshop le modèle conceptuel utilisé est celui du shopping IRL (visiter des rayons, placer des objets dans un caddie etc). L’utilisateur comprend, même s’il vient pour la première fois sur un site de e-commerce, parce qu’il l’a déjà souvent expérimenté en vrai.
+Ce modèle conceptuel doit rester cohérent tout du long de l’expérience.
+Certains modèles conceptuels sont si souvent utilisés qu’ils ont le statut de convention (l’exemple de l’eshop). Suivez les conventions sauf si vous avez une meilleure idée de modèle conceptuel, qui reste compréhensible et intuitif pour l’utilisateur.
+
+Gestion des erreurs :
+	•	Idéalement : rendre toute erreur impossible, ou très difficile Exemple : les champs ayant une taille limité, les curseurs et menu déroulant ne permettant qu’un nombre de choix restreints etc...
+	•	Si l’erreur se produit et qu’elle est détectable, signaler à l’utilisateur qu’il a fait une erreur avec un message d’erreur clair et utile, et si possible proposer de la corriger automatiquement
+	•	Si l’erreur se produit et qu’elle n’est pas détectable (l’utilisateur a supprimé quelque chose par accident), proposer une fonction « Annuler » ou des demandes de confirmation (pas trop fréquentes sinon personne n’y fera plus attention)
+
+__Architecture de l’information__
+Comment structurer le contenu en termes de navigation et d’organisation de façon à ce que l’utilisateur trouve facilement le contenu recherché, et que ce contenu ait un maximum d’impact (éducatif, informatif et/ou persuasif)
+Catégorisation : la catégorisation adoptée doit correspondre au mieux aux objectifs projets et besoins utilisateurs, mais aussi au contenu à publier et aux fonctionnalités requises.
+
+Une catégorisation vers le bas consiste à partir des besoins et exigences comme catégories principales, puis à fractionner le tout en sous-rubriques. 
+Une catégorisation vers le haut consiste à partir du contenu et des fonctionnalités listées, puis à regrouper le tout en multiples rubriques jusqu’au sommet. 
+Equilibrer ces deux approches donne de meilleurs résultats que d’en favoriser une seule : l’approche vers le bas permet une meilleure évolutivité de la structure quand du contenu supplémentaire viendra à s’ajouter, et l’approche vers le haut permet de tout faire rentrer dans la structure dès le départ. Cependant lorsqu’un site grossit régulièrement, viendra forcément un moment où la structure devra être réadaptée, et lorsqu’on s’en rend compte les utilisateurs en pâtissent déjà.
+
+L’unité de base des structures d’informations est le nœud. Ce nœud peut être de la taille d’une information (par exemple un numéro de téléphone) ou de la taille d’une bibliothèque. Voir les informations comme des nœuds plutôt que comme des pages ou rubriques permet de les placer facilement dans l’arborescence.
+
+Les structures existantes :
+Hiérarchique : relation père / fils entre les nœuds. Plus l’on descend dans la filiation, plus les concepts abordés sont specifiques, le premier père représentant la catégorie. Structure quasi-systématique sur le web
+Matricielle : chaque nœud est en relation avec deux à trois autres nœuds. Surtout utilisé pour permettre à des utilisateurs ayant des besoins différents de naviguer dans le même contenu.
+Organique : structure anarchique où les connexions se font au cas par cas. Utile pour explorer un ensemble de sujets dont la relation est peu claire ou évolue. Intéressant pour les sites de divertissement ou éducatifs, pour inviter l’utilisateur à explorer librement, mais prséente la difficulté de retrouver son contenu après coup.
+Séquentielle : les nœuds se connectent en file indienne, comme dans un livre. Surtout utilisé pour les petites structures : par exemple suite d’articles et de sections. Ne fonctionne que pour des sites dont le contenu doit obligatoirement être présenté dans un ordre précis pour être utile, par exemple les manuels utilisateurs.
+
+Principes d’organisations : les règles qui permettront de décider quels nœuds doivent être regroupés, en fonction de la localisation et du niveau de chacun. Ces règles se définissent en fonction des besoins et exigences définies précédemment, ainsi que de la liste d’informations remplissant ces besoins et exigences.
+Nomenclature : descriptions, labels, terminologies. Cette nomenclature doit correspondre au langage de l’utilisateur, et ce en toutes circonstances via un vocabulaire contrôlé, voire un thésaurus qui lui comprend une liste de termes du jargon interne à ne pas laisser apparaître sur le site, et les mots alternatifs à utiliser. Cette nomenclature permet aussi de lier entre eux des nœuds en utilisant un système de mots-clés, et d’améliorer les suggestions du moteur de recherche interne.
+Metadata : description structurée d’un contenu / d’une donnée. Auteur, date de publication, post type, nom du produit, thèmes liés. Plus le contenu est précisément documenté, plus la structure gagne en flexibilité.
+Diagramme d’architecture : la façon la plus simple de représenter une structure. Rester général, l’exhaustivité risque d’être contreproductive (le reste de l’équipe ne lira pas) Cf. The Visual Vocabulary pour une normalisation du diagramme d’architecture.
+
+
+**Etape 4 : Définir le squelette**
+
+Le squelette définit la forme de façon encore très générale.
+Ne vous éloignez des conventions que si vous avez mieux à proposer.
+N’utilisez des métaphores que si elles permettent de mieux comprendre le fonctionnement de votre outil.
+L’interface doit rester visuellement cohérente et constante. Deux interfaces basées sur le même modèle conceptuel doivent forcément conserver les mêmes codes.
+
+__Design d’interface__
+Consiste à sélectionner les composants d’interface (type champs, boutons etc) pour permettre à l’utilisateur de comprendre et d’utiliser des fonctionnalités d’un écran sur l’autre.
+Un bon design d’interface se fait lorsqu’on a identifié le parcours que l’utilisateur est le plus susceptible de prendre, et de guider visuellement l’utilisateur sur ce parcours.
+Cela implique de masquer les entrées que l’utilisateur est le moins susceptible de prendre. Si le site reçoit différents publics dont une part est plus avertie que l’autre, une astuce consiste à cocher par défaut la case « Show me more options » pour avoir toutes les options avancées pour ce public, les autres décocheront. Si c’est techniquement faisable, mémorisez le choix de l’utilisateur.
+Un choix de composant a toujours des avantages et des inconvénients. Choisissez le plus adapté.
+
+__Design de navigation__
+Permet à l’utilisateur de naviguer dans le site. Cf. Don’t make me think
+Son rôle est à la fois de naviguer d’un point à l’autre du site (où suis-je et où puis-je me rendre), mais aussi de comprendre la relation entre les différentes pages du site, et enfin de comprendre la relation entre le module de navigation et la page en cours de consultation.
+Différents types de navigation : 
+	•	Navigation globale : permet de naviguer dans les principales rubriques du site, en général jusqu’à deux niveaux de profondeur
+	•	Navigation locale : permet de naviguer dans les pages hiérarchiquement aux extrémités de la page (parentes, enfants, voisines)
+	•	Navigation supplémentaire : permet de naviguer dans du contenu en rapport avec la page courante
+	•	Navigation contextuelle : suggestions de contenus en rapport avec la page courante au sein même de l’article
+	•	Navigation de courtoisie, ou Utilitaires : liens vers des pages couramment peu consultées mais contenant des infos de base type contact, CGU…
+	•	Outils de navigation à distance : plan du site, index...
+
+__Design d’information__
+Comment agencer l’information pour la communiquer plus efficacement à l’utilisateur.
+Choix visuel : quel type de graphique représenterait le mieux cette donnée ? Quelle icône symboliserait le mieux la recherche ?
+Choix d’agencement de l’information : quelles entrées de mon formulaire vont ensemble et facilitent sa compréhension ? (en fonction de la façon de penser de l’utilisateur)
+Les interfaces doivent communiquer toutes sortes d’informations : messages d’erreur, instructions… et c’est à l’interface d’attirer l’œil de l’utilisateur vers ces messages.
+
+Un wireframe annoté permet de fixer les choix pris pour le squelette, tirés du diagramme d’architecture, des contenus requis, des spécifications fonctionnelles...
+
+
+**Etape 5 : Définir la surface**
+
+En fournissant une expérience sensorielle (le toucher grâce à la vibration du téléphone, le son et surtout le visuel).
+Le critère d’une surface réussie n’est pas son esthétique mais sa réussite dans la transmission d’un message et du respect des objectifs pré-établis à chaque niveau (structure, squelette…). Par exemple, transmettre une image de marque. Faire en sorte que celle-ci reste cohérente tout le long aura un impact sur la manière dont la marque sera perçue.
+A tester : l’eyetracking pour savoir si l’utilisateur suit bien un flux continu dans la page ou s’il se repère difficilement.
+Le contraste attire l’œil, ce qui est utile pour attirer son attention vers les messages d’erreur par exemple, mais aussi pour aider l’utilisateur à comprendre le lien entre les différents éléments de navigation de la page, et regrouper des éléments conceptuellement liés.
+ Cela ne marche que si tout le reste est uniforme. Utiliser une grille peut par exemple aider à garder une uniformité visuelle.
+Designer chaque élément individuellement, et vérifiez si l’ensemble fonctionne entre eux, puis ajustez les différences en redesignant l’ensemble.
+
+Couleurs : les couleurs vives en accentuation (contraste) et les couleurs plus ternes pour l’uniformité. Eviter de séléctionner deux couleurs trop proches (difficiles à distinguer l’une de l’autre)
+Typo : pour le corps de texte, choisissez simple. Pour les éléments plus gros ou les labels, on peut se permettre plus de fantaisie sans verser dans le too much. On évitera de choisir plusieurs typos qui se ressemblent trop, n’utiliser des typos différentes que si le type d’information traité est différent.
+
+A partir de ces éléments, faire une maquette et une charte graphique.
