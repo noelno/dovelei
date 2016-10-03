@@ -1,0 +1,156 @@
+Don’t make me think revisited, de Steve Krug
+
+**Définition de l’utilisabilité**
+
+__Critères de l’utilisabilité__ selon la définition la plus répandue :
+	•	utile pour l’utilisateur
+	•	l’utilisateur finit par apprendre à s’en servir sans difficulté
+	•	l’utilisateur finir par mémoriser le fonctionnement sans avoir à le réapprendre aux utilisations suivantes
+	•	répond efficacement au besoin de l’utilisateur (fait bien le travail, dans un délai raisonnable et avec un moindre effort)
+	•	désirable
+	•	agréable / amusant à utiliser
+
+Définition de l’utilisabilité selon Steve Krug : __une personne peu expérimentée peut comprendre comment utiliser ce dispositif pour réaliser une action qui est normalement plus complexe à réaliser sans ce dispositif__.
+
+
+**Pourquoi l’utilisabilité**
+
+L’utilisateur doit chercher le moins possible et ne doit pas avoir à s’arrêter pour comprendre.
+
+Le rôle du designer est d’__identifier les questions__ qui peuvent amener l’utilisateur à douter et à a réfléchir à l’utilisation du site, et de modifier l’interface de façon à ce que ces questions ne se posent plus. 
+
+Si votre site est compliqué à utiliser, l’utilisateur ira chercher sa réponse ailleurs. (= jauge de bonne volonté).
+
+Les utilisateurs ne lisent pas les pages web en entier comme des robots, ils survolent à la recherche de liens ou d’informations correspondant à ce qu’ils recherchent. Les habitués du Net repèrent rapidement les blocs qui les intéressent. Ils le font parce qu’ils sont pressés.
+
+Pour la même raison, ils ne lisent pas les modes d’emploi, et s’ils arrivent à leurs fins autrement qu’en suivant le mode d’emploi ils continueront à utiliser le site de cette façon car seul le résultat compte.
+''Sources of Power – How people make decisions'', de Gary Klein
+
+L’utilisabilité sur un site a les avantages suivants :
+	•	l’utilisateur a plus de chances de trouver ce qu’il cherche
+	•	l’utilisateur a plus de chances de comprendre l’étendue de ce que propose le site
+	•	l’utilisateur a plus de chances d’aller dans la direction où vous souhaitez l’amener
+	•	l’utilisateur se sent intelligent, ce qui lui donnera envie de revenir
+
+
+**Règles de bases d’un site utilisable**
+
+	•	Respecter les conventions : layout, style des éléments, apparence des icônes… Innovez si et seulement si votre idée est meilleure que la convention habituelle The Design of Everyday Things, de Don Norman
+	•	Créer des hiérarchies visuelles efficaces : plus c’est gros plus c’est important, les éléments qui vont sémantiquement ensemble ont le même style, les éléments sous un même titre sont tous liés à ce titre
+	•	Fractionner les pages en blocs
+	•	Limiter le « bruit » (les publicités criardes, la mise en avant de trop d’éléments, le manque d’organisation des blocs, le trop-plein d’éléments…) Limiter le nombre de mots : éviter les textes introductifs que personne ne lit jamais ainsi que les modes d’emploi.
+	•	Formater le texte pour faciliter son survol (titres plus gros et bien espacés, paragraphes courts d’une à deux phrases, listes, surlignage de mots-clés) Pour des textes faciles à survoler : Letting go of the words, de Janice (Ginny) Redish
+	•	Proposer des choix simples, évidents. L’utilisateur ne doit pas avoir à réfléchir trop longtemps à quel intitulé / bouton / lien correspond à sa situation Pour simplifier les choix : Forms that works, de Caroline Jarrett et Gerry Gaffney, chapitre « Making questions easy to answer »
+	•	Pour les cas les plus difficiles à expliciter, utiliser des aides type infobulles. Ces aides doivent être les plus brèves possibles (ce n’est pas un mode d’emploi), placées au plus près de l’endroit où l’utilisateur en a besoin, et visuellement inmanquables.
+
+
+**Navigation**
+
+Une bonne navigation web permet de :
+	•	savoir ce qu’il y a sur le site (connaître son contenu)
+	•	comprendre comment utiliser le site
+	•	mettre l’utilisateur en confiance (« Ils savent ce qu’ils font »)
+
+Les éléments de base de la navigation :
+Navigation persistante (ou globale) : la boussole. Apparaît constamment sur le site.
+	•	nom ou logo du site
+	•	rubriques (accueil inclus), avec une présentation en onglets
+	•	champ de recherche (bouton « Rechercher », ou « Go » si « Rechercher » sert déjà d’étiquette, et spécifier l’étendue du champ de recherche si nécessaire)
+	•	4 à 5 utilitaires max.
+
+Navigation locale : varie selon la catégorie / le type de contenu
+	•	nom de la page, bien placé et suffisamment gros L’intitulé de la rubrique dans le menu et le nom de la page doivent se correspondre
+	•	accentuation de la page sélectionnée dans le menu
+	•	fil d’Ariane, tout en haut, séparé par des >, avec l’élément en cours en gras
+	•	sous-rubriques
+
+
+**Page d’accueil**
+
+La page d’accueil a beaucoup de rôles à remplir, et beaucoup d’intervenants vont demander à ce que tel ou tel élément soit en page d’accueil. L’objectif du designer par la page d’accueil est de faire comprendre : ce qu’est ce site, qu’est-ce que je peux y faire, qu’est-ce-qu’ils proposent, et pourquoi je suis à ma place sur ce site et pas sur un autre.
+
+Les éléments indispensables d’une page d’accueil : 
+	•	la tagline descriptive du site. Claire et informative, de 6 à 8 mots et dit exactement ce que le site fait, de façon la plus spécifique possible (éviter les taglines génériques). Si possible une tagline « bien trouvée » (drôle, personnelle, sans être trop obscure).
+	•	l’objet du site, dans un gros bloc en haut à gauche ou au centre. A ne pas confondre avec la mission de l’entreprise
+	•	la vidéo qui permet d’en savoir plus
+
+Utilisez autant d’espace que nécessaire, aérez la page.
+Mettre en avant les trois principaux points d’entrée :
+	•	recherche
+	•	navigation par le menu
+	•	sélection des meilleures pages
+  
+
+**Les tests utilisateurs**
+
+Tout le monde a son avis sur ce qui serait entre les boutons radio et les menus déroulants. Evitez les débats stériles en ayant recours aux tests utilisateurs pour checker quelle version a le plus de succès auprès des utilisateurs. 
+Faites au moins un test par mois, avec trois utilisateurs. Cela devrait suffire pour déceler les plus gros problèmes.
+Rocket Surgery made easy, de Steve Krug
+
+
+**Utilisabilité et mobile**
+
+Sur mobile certains indices visuels liés au survol ne sont plus disponibles. Soyez-y attentif, et limitez l’usage du flat design.
+Compacter les ressources de façon à faciliter le téléchargement sur mobile.
+Les aspects « agréable » et « apprenable » de l’utilisabilité sont particulièrement important dans le design d’une application mobile.
+
+
+**La jauge de bonne volonté des utilisateurs**
+
+Ce qui la vide :
+	•	cacher des informations type prix, surcoûts / taxes, numéros de téléphone du support
+	•	être obligé de respecter un certain format lorsque l’on saisit des données
+	•	devoir renseigner des informations qui ne sont pas nécessaires
+	•	les messages faux-cul
+	•	l’apparence « amateure » d’un site
+
+Ce qui la remplit :
+	•	orienter l’utilisateur vers les trois principales choses qui l’intéressent, faciliter au maximum son parcours vers ces trois choses
+	•	dire tout ce que l’utilisateur veut savoir : coûts
+	•	réduire le nombre d’étape dans le parcours, le simplifier. Par exemple pour suivre son colis, un lien vers le site de suivi est plus efficace que de juste donner le numéro
+	•	produire l’information nécessaire pour résoudre un problème / vérifier que celle-ci est exacte / la présenter clairement / l’organiser de façon à pouvoir la trouver facilement
+	•	identifier les questions que les utilisateurs sont le plus susceptible de se poser en ce moment, même les plus embarrassantes, et y répondre d’avance : FAQ. Actualiser la FAQ, les questions sont susceptibles de varier selon l’actualité
+	•	des pages avec un style d’impression simple
+	•	des pitfalls pour les erreurs utilisateurs. Dans l’idéal le formulaire est renseigné de façon à empêcher ces erreurs d’arriver
+	•	dans le cas où un problème d’utilisabilité ne peut être corrigé, s’excuser de la gêne occasionnée
+
+
+**Utilisabilité et accessibilité**
+
+Gérer l’accessibilité peut être compliqué. Mais vous pouvez vous occuper de 80 % du travail en faisant simplement ceci :
+	•	réparer ce qui gêne les personnes sans handicap, ou ces gênes risquent d’être une encore plus grosse gêne pour les personnes en situation de handicap
+	•	assister à un test d’un appareil d’accessibilité / screen-reader lire le rapport d’étude sur l’utilisation de ces appareils : http://redish.net/images/stories/PDF/InteractionsPaperAuthorsVer.pdf
+	•	lire quelques lectures recommandées sur l’accessibilité :
+	◦	A Web for Everyone: Designing Accessible User Experiences, de Sarah Horton et Whitney Quesenbery
+	◦	Web Accessibility: Web Standards and Regulatory Compliance, de Jim Thatcher
+	•	suivre quelques règles de base :
+	◦	utiliser les balises de titres de façon appropriée
+	◦	ajouter un texte alternatif à toutes les images
+	◦	ajouter un label à tous les champs du formulaire
+	◦	ajouter un lien « Aller au contenu » au début de chaque page, visible uniquement aux appareils d’accessibilité
+	◦	rendre tout le contenu accessible par clavier
+	◦	le texte et le background doivent être suffisamment contrastés
+	◦	pour les CMS, choisir des templates certifiés accessibles
+
+
+**Guide "anti-sceptiques"**
+
+Comment convaincre ses supérieurs de l’utilité de l’utilisabilité :
+	•	calculer le retour sur investissement
+	•	utiliser leur langage
+	•	leur demander d’assister à un test utilisateurs
+	•	faire un premier test sur son temps libre, sans demander la permission
+	•	faire un test sur un produit de la compétition
+	•	rester humble et compréhensif par-rapport aux autres et à leur mission dans cette grande fourmilière qu’est l’entreprise
+
+Quelques recommendations de lecture :
+	•	''It’s Our Research: Getting Stakeholder Buy-In for User Experience Research Projects'', de Tomer Sharon
+	•	''The User Experience Team of One: A Research and Design Survival Guide (Chapitre 3 et 4)'', de Leah Buley
+
+**Le côté obscur de l’utilisabilité**
+
+Votre rôle est d’amener les gens vers une direction précise. Pour ce faire, vous trouverez des recommandations dans ces ouvrages :
+	•	''Influence: The Psychology of Persuasion'', de Robert Cialdini
+	•	''How to get people to do stuff'', de Susan Weinschenk
+
+Vous pouvez influencer les gens mais ne tombez pas dans la manipulation et la tromperie comme le font les publicitaires malhonnêtes avec leurs faux boutons de téléchargement. D’autres exemples de tromperies de ce genre dans le livre ''Evil by Design: Interaction Design to Lead Us into Temptation'', de Chris Nodder.
