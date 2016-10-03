@@ -1,0 +1,16 @@
+Florens Verschelde - CSS Selector Wars : Un Nouvel Espoir ?
+https://vimeo.com/182053671
+
+Pour éviter les problèmes de surcharge inhérents aux modifications rapides du CSS en agence, il existe différentes solutions, correspondant à différents niveaux de granularité.
+
+Conseils généraux :
+- utilisez des classes
+- évitez l’utilisation de classes imbriquées
+
+- convention BEM ou SUIT CSS : convention CSS qui consiste à pré-définir des blocs appelés composants qui devront rester à tout jamais séparés. Ces composants se voient chacun attribuer leur classes avec un nom commençant par une majuscule. Les éléments qui constituent le composant ont eux aussi une classe portant un nom ayant pour préfixe le nom du composant. Par exemple le composant Teaser se compose d’une photo Teaser-pic, d’un texte Teaser-text etc. A privilégier sur les projets de petite taille (quelques maquettes)
+
+- classes utilitaires : classes avec des micro-styles, typique des frameworks CSS : .clearfix, .col, .label, et les déclinaisons couleurs .label-success… A privilégier sur de plus gros projets
+
+- classes atomiques : classes correspondant à une propriété. Par exemple la classe .i permet de mettre du texte en italique, .b en bold etc. Cela équivaut à renseigner directement la balise style, sauf qu’en passant par des classes les propriétés ne sont pas automatiquement prioritaire + les instructions sont plus courtes. Atomic CSS, Tachyons, Atomizer… A combiner avec des environnements js (React / Ember / Angular)
+
+- CSS modules : générateur de classes uniques, intégrant au passage une fonction de composition.
