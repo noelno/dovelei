@@ -154,3 +154,39 @@ Votre rôle est d’amener les gens vers une direction précise. Pour ce faire, 
 	•	''How to get people to do stuff'', de Susan Weinschenk
 
 Vous pouvez influencer les gens mais ne tombez pas dans la manipulation et la tromperie comme le font les publicitaires malhonnêtes avec leurs faux boutons de téléchargement. D’autres exemples de tromperies de ce genre dans le livre ''Evil by Design: Interaction Design to Lead Us into Temptation'', de Chris Nodder.
+
+
+=========================
+
+
+Addendum : v0 de mes notes (le reste a été perdu)
+
+[incomplet] Notes de lecture du livre de Steve Krug "Don't make me think, Revisited"
+(ce qu'il en reste après une malheureuse fausse manip :-( )
+
+__**Première règle : "Je ne veux pas chercher !"**__ ("Don't make me think")
+
+Tout doit être évident pour l'utilisateur lambda ou maladroit avec la technologie. "Ok, ça c'est x, et ça c'est une y, et ce qui m'intéresse est ici".
+Si l'utilisateur doit réfléchir, c'est que l'interface est mal conçue ou que la page est plus complexe que d'ordinaire : "Ou suis-je ?", "C'est chargé, par où je commence ?", "Pourquoi ils ont choisi cet intitulé ?", "C'est cliquable ce truc ?", "C'est là ou là le système de navigation ?", "Pourquoi ils ont mis ça ici ?", "Ces deux liens ont le même intitulé, ils pointent vers la même chose ?", "Quels sont les éléments les plus importants de cette page ?"
+
+  * Nommez les éléments avec des noms les plus évidents possibles pour tout le monde. Evitez les jeux de mots, les noms marketing, les noms propres à une entreprise, les noms techniques non familiers.
+  * Faites en sorte que les boutons et les liens soient clairement identifiables comme tels
+  * **En général, supprimez ce qui oblige l'utilisateur à réfléchir** (ex : les champs de recherche avec les menus déroulants pour une recherche filtrée).
+
+Une page claire est plus attrayante pour l'utilisateur, qui se sent plus intelligent. Cela met en valeur son contenu.
+
+Cela facilite aussi sa navigation, qui fonctionne plus ainsi : l'utilisateur ne lit pas tout (parce qu'il est pressé, qu'il a l'habitude de lire en diagonale et qu'il sait que ce n'est pas nécessaire de tout lire pour trouver ce qu'il cherche), il survole pour repérer ce qui l'intéresse et ce qui a l'air cliquable. Dès qu'un lien a l'air de correspondre un tant soit peu à sa recherche, il arrête de chercher sur la page et clique. Si ce n'est pas ce qu'il cherchait, il clique sur Précédent et reprend sa recherche.
+Ce qui signifie que s'il obtient le résultat en prenant un chemin différent de celui que vous aviez initialement prévu, il continuera à s'y prendre mal.
+**Si vous voulez que votre public se comporte de la façon dont vous concevez vos sites, faites des sites irréprochables**.
+
+
+__Accroche visuelle__
+
+1. Suivez les conventions :
+  * de positionnement : le logo en haut à gauche
+  * 
+
+2. Créez une hiérarchie visuelle claire : 
+  * plus un élément est important plus il se distingue (par sa couleur, sa police, sa taille, sa couleur d'arrière-plan, par l'espace qui l'entoure, par sa position au sommet de la page...)
+  * les éléments liés logiquement doivent être liés graphiquement : par exemple les catégories possèdent le même style visuel, ils sont groupés dans une zone bien définie ou groupés sous un titre
+  * pour souligner le niveau hiérarchique, les éléments doivent être imbriqués visuellement. Si un titre est au-dessus de plusieurs blocs, l'utilisateur en conclut que ces blocs constituent un sous-ensemble.
