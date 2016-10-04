@@ -1,0 +1,735 @@
+Notes du livre "La phase de recherche en web design" d'Erika Hall, édité dans la collection "A List Apart".
+[[http://www.eyrolles.com/Audiovisuel/Livre/la-phase-de-recherche-en-web-design-9782212141467]]
+
+@@sommaire@@__**Sommaire :**__
+[[#principe|I. La recherche en design : pour quoi, pour qui]]
+[[#staff|II. La recherche et le staff]]
+[[#rigueur|III. Un minimum de rigueur]]
+[[#plan|IV. Rédaction du plan de recherche]]
+[[#recrutement|V. Recrutement des utilisateurs]]
+[[#organisation|VI. Analyse organisationnelle]]
+[[#recueil|VI. Recueil des données : général]]
+[[#entretiens|VII. Recueil des données : les entretiens semi-directifs]]
+[[#usertests|VIII. Recueil des données : les tests utilisateurs]]
+[[#documentation|IX. Recueil des données : l'analyse de la documentation]]
+[[#analyse|X. Analyse des données]]
+------------------------------------//
+
+
+@@principe@@**__I. Le principe de la recherche en design__** 
+
+**Un design réussi est un design qui répond aux besoins et aux désirs d'êtres humains**. Pour identifier ce besoin il faut le rechercher, et ce en posant les bonnes questions et en utilisant les bons outils.
+
+La recherche n'est pas :
+ • demander aux gens ce qu'ils aiment. Tout le monde ayant des goûts différents, c'est sans fin...
+ • un outil politique. Ne pas essayer de faire coller le résultat à un discours tout prêt.
+ • une science. OSEF des résultats significatifs, on est designer, pas marketeux ou scientifique.
+
+Les étapes de recherche à inclure se déterminent au cas par cas, en fonction de :
+ • **l'objectif** ("quelles sont les décisions en jeu à ce stade")
+ • **le sujet** ("sur qui/quoi porte les questions")
+
+Mais aussi en se posant les questions suivantes :
+ • quel est le meilleur moyen de recueillir les informations de base
+ • quel sont les objectifs et les exigences du projet
+ • quel est le contexte actuel du projet
+ • quels sont les solutions potentielles
+
+Il existe plusieurs types de recherche :
+
+__La recherche générative__
+"Quel est le problème à résoudre ?"
+Elle a pour but d'identifier le problème (recherche préliminaire) et d'avoir déjà en tête des idées de propositions. Elle peut se faire en se basant sur :
+   ▪ des entretiens
+   ▪ des sondages
+   ▪ des observations de terrain
+   ▪ l'analyse de la documentation existante, par exemple les messages du public cible sur les réseaux sociaux
+A partir de ces éléments des besoins hypothétiques pourront être formulés.
+
+__La recherche descriptive et explicative__
+"Comment je résous ce problème de la façon la plus efficace possible ?"
+Elle utilise les mêmes méthodes que la recherche générative mais se base sur de questions beaucoup plus pointues.
+Ex : les jeunes parents ont un besoin x :
+- quels sont leurs habitudes de navigation
+- ont-ils une bonne culture web
+- comment sont-ils équipés etc...
+Le but étant de connaître le contexte précis dans lequel doit être déployé l'application web pour qu'elle y soit adaptée et efficace dans le remplissage du besoin identifié.
+A la fin de cette étape on peut suggérer des propositions de problèmes à résoudre.
+
+__La recherche évaluative__
+"Est-ce qu'on s'approche ?"
+Consiste à tester les propositions, pour voir si elles répondent au besoin identifié
+   ▪ des tests utilisateurs
+   ▪ des présentations pour validation
+
+__La recherche causale__
+"Pourquoi cela donne ce résultat ?"
+Consiste à identifier les éléments de l'application qui ont un succès significatif et ceux qui bident complètement et en rechercher la cause, pour faire remonter les éléments en faute. 
+   ▪ regarder les stats
+   ▪ faire des analyses multivariées
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@staff@@**__II. La recherche et le staff__**
+
+**Toute l'équipe projet doit participer à la recherche**, et ce dès le départ :
+ • si vous êtes seul(e) sur le projet, l'expérience sera plus directe
+ • si vous êtes plusieurs, le reste de l'équipe acceptera mieux ce document de référence s'ils ont aussi travaillé dessus, et l'impression d'être les "subordonnés" de la tête pensante sera moins présente
+
+Les **rôles** de recherche :
+- **Auteur** : planifie et rédige l'étude, ses problématiques et le guide d'entretien / le script de test
+- **Enquêteur** (ou modérateur) : la personne qui interagit avec les testeurs
+- **Coordinateur** : établit le calendrier de l'étude, les session de tests et les RDV
+- **Preneur de notes** : prend des notes. Idéalement ne doit pas être la même personne que l'enquêteur. Au pire faire un enregistrement audio de la session
+- **Recruteur** : démarche et sélectionne les bons profils pour les tests utilisateurs. Le recruteur est souvent aussi coordinateur.
+- **Analystes** : analysent le contenu issu des sessions avec les utilisateurs. Idéalement au moins deux.
+- **Documentariste** : rapporte le résultat des recherches sous forme de document quand toutes les sessions sont finies.
+- **Observateur** : client ou membre de son équipe qui vient assister à la phase de test ou écouter les enregistrements.
+
+Pensez dès le début du projet à :
+- expliquer à l'équipe comment se déroule le projet, en particulier la recherche, et à répartir les rôles (qui sont interchangeables, applicables à une seule personne...)
+- demander l'approbation de votre chef / client pour la réalisation phase de recherche
+
+Pour ce second, préparez les réponses à ses éventuelles objections :
+- "Pas le temps" : vous aussi manquerez de temps si vous partez dans la mauvaise direction. Listez toutes vos hypothèses et estimez le temps supplémentaire dont vous aurez besoin pour chacune de ces hypothèses si elles s'avèrent toutes fausses.
+- "Oui mais faites plus court" : consacrer beaucoup de temps à la préparation (deux semaines) va permettre une réalisation extrêmement rapide et sans problème
+- "Pas la compétence en internet et pas de budget" : si, vous ! Pas besoin d'être un scientifique quand on a de l'ouverture d'esprit, que l'on sait s'adapter et que l'on sait communiquer). Et cette phase peut s'adapter à tous les budgets avec un peu d'astuce.
+- "Pas d'infrastructure adaptée" : il suffit d'un PC et d'une connexion internet
+- "Le patron va dire non" : faites au moins la recherche générative, cela devrait achever de les convaincre (ou de vous convaincre vous de démissionner)
+- "Oui mais pas cette méthodologie" : ce sont les questions posées qui déterminent la méthodologie
+- "On n'a qu'à juste faire une bêta et on testera à partir de là" : c'est plus rapide de faire des recherches que de revenir sur des hypothèses non testées.
+- "On sait déjà tout des utilisateurs, du problème et de l'application" : de quand date cette connaissance ? Si elle n'est pas toute récente et ne cadre pas exactement avec les besoins identifiés, il faut l'actualiser sous peine de se baser sur des préconçus plus que sur la réalité et de partir dans la mauvaise direction. + il ne suffit pas que vous me le disiez, il faut que je l'expérimente + si vous les connaissez si bien, dites-leur de venir tester.
+- "La recherche va modifier l'envergure du projet" : mieux vaut connaître d'avance tous les paramètres plutôt que de s'apercevoir en cours de route qu'un paramètre hyper important contredit l'avancement du projet.
+- "La recherche va limiter l'innovation" : une bonne innovation s'ancre un minimum dans le réel
+
+Si dans six mois vous réalisez que :
+- vous travaillez à résoudre le mauvais problème
+- vous n'avez pas assez de soutien organisationnel
+- vous n'avez pas l'avantage compétitif escompté / vous vous êtes fait copier par la concurrence
+- vos clients les plus importants ne s'intéressent pas aux fonctionnalités développées
+- ce qui compte le plus pour vos utilisateurs ne se reflète pas dans le résultat
+- vos utilisateurs ne comprennent pas les mots utilisés
+- vous avez oublié un aspect essentiel de l'environnement de vos utilisateurs
+- vous vous êtes trompés sur les habitudes et les préférences de vos utilisateurs
+L'une de ces situations serait-elle problématique pour votre entreprise ? Si oui, ne sautez pas la phase de recherche
+
+Si vous êtes freelance : pensez à inclure la recherche dans le devis et ajoutez dans le contrat que vous devez pouvoir accéder aux données du client
+Si vous êtes en entreprise : vous avez l'avantage, si vous travaillez sur un produit existant de pouvoir accéder aux données du service client et du du support utilisateur
+Si vous êtes adepte de la méthode agile : n'attendez pas que la phase de recherche soit terminée pour commencer à coder. Concentrez-vous sur les utilisateurs les plus importants (que vous classerez en fonction de leur proximité avec le public cible et de leur différence avec le reste de l'équipe), analysez chaque résultat dès son arrivée. Continuez à mener des entretiens toutes les trois semaines.
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@rigueur@@**__III. Un minimum de rigueur__**
+
+Restez impartial(e) en détectant les biais suivants :
+- Biais de conception : l'étude elle-même est orientée de façon biaisée
+- Biais d’échantillonnage : l'échantillon n'est pas représentatif (un échantillon à 90% de femmes pour une application s'adressant aux deux sexes, des personnes à l'extrémité d'une tranche d'âge)
+- Biais de l'enquêteur : l'enquêteur n'est pas neutre (trop enthousiaste ou ennuyé) et son attitude peut fausser les réponses du testeur
+- Biais du commanditaire : connaître le nom et/ou le statut de l'organisation commanditaire peut fausser l'évaluation du testeur
+- Biais de désirabilité sociale : certaines questions peuvent porter sur des aspects de la vie du testeur qu'il ne voudra pas avouer. Insistez sur l'importance de l'honnêteté et permettez les réponses anonymes
+- "Effet Hawthorne" : votre simple présence lors d'une immersion affectera l'attitude des personnes présentes. Essayez de vous fondre dans le décor.
+
+Un peu d'éthique :
+- le projet en lui-même est-il éthique ? Si non, n'y participez pas (ex : vente de pilules régime)
+- la méthode de recherche est-elle éthique ? (ex : si vous n'aviez pas omis certains détails la personne ne serait pas venue / vous la dupez)
+- le consentement libre et éclairé de personnes saines d'esprit : "je comprends et j'accepte les objectifs généraux de l'étude et j'accepte que mes informations soient enregistrées, conservées, utilisées et partagées". Autorisation parentale pour les mineurs.
+- la sécurité : prévenez la personne de ce qui va se passer, demandez-lui d'arriver en forme et surtout ne faites rien qui puisse la déconcentrer pendant une manœuvre risquée.
+
+Soyez sceptique : dès qu'il y a un doute, un flou, une incompréhension, un besoin de précision, **demandez** !
+
+**Checklist n°1 : Bonnes pratiques**
+☐ Formuler la réponse à la question "Qu'est-ce-que je cherche à savoir avoir cette recherche, et pourquoi ?"
+☐ Fixer des attentes réalistes : faire le tour de l'équipe de ce qu'ils attendent en termes de questions à poser, de méthodes à utiliser et de décisions à prendre à partir des résultats
+☐ Ordonner ses documents
+☐ Prévoir suffisamment de temps pour analyser les résultats avant de passer à la suite
+☐ Prendre des notes 
+
+Quand arrêter les recherches ? Quand tout fera sens ("le déclic").
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@plan@@**__IV. Rédaction du plan de recherche__**
+
+1. Définir clairement le point à rechercher / la problématique sous forme de tache(s).
+Ex : "Définir comment les parents planifient leur weekend"
+
+2. Choisir le type d'approche en fonction du temps, du budget et du personnel disponible.
+Le sujet et la nature de vos activités guideront le choix de vos activités de recherche.
+{{PawfalikiImages/schema.gif|Le sujet et la nature de vos activités guideront le choix de vos activités|300}}
+Sur les utilisateurs : recherche utilisateur / ethnographique
+Sur une solution / un produit : recherche évaluative
+Compléter la problématique en choisissant une approche : "Définir comment les parents planifient leur weekend sur la base d'entretiens téléphoniques individuels"
+
+3. [[https://www.uie.com/articles/usability_testing_three_steps/|Planifier]] : 
+ • Faire une checklist de toutes les problématiques
+ • Estimer le budget et le temps à allouer pour cette phase de recherche
+ • Identifier le sujet / la cible qui va participer au test et les procédures de recrutement et de dédommagement
+ • Inclure les documents de référence (?)
+ • Penser à un plan B au cas où l'argent et/ou le temps alloué est revu à la baisse pendant la recherche : repousser le calendrier, faire appel à d'autres personnes ou se contenter de ce qui a déjà été recueilli ?
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@recrutement@@**__V. Recrutement des utilisateurs__**
+
+Recruter sur internet (sites à haute visibilité, réseaux sociaux) des utilisateurs cibles, qui ont un âge, des préoccupations, des objectifs, des caractéristiques (âge, secteur d'activité) et un niveau de culture technologique cibles; ainsi qu'un niveau d'expression suffisant pour être intelligible.
+
+Conseil : Dans l'annonce que vous posterez pour inviter les utilisateurs à remplir le questionnaire, utiliser le terme "Recherche en design" plutôt que "Etude de marché"
+
+Rédiger le questionnaire de sélection en se basant sur les éléments suivants :
+
+      ▪ quels sont les **comportements spécifiques** que vous recherchez chez l'utilisateur (ex : une application pour les cyclistes ? ==> quelqu'un qui fait du vélo au moins x fois par semaine). 
+Pour éviter les testeurs "professionnels" qui postulent à tous les tests juste pour l'argent et mentent aux réponses juste pour être sélectionnés, dissimuler la question parmi d'autres comportements. (ex : sur une échelle de "Jamais ou rarement" à "au moins 1 fois par semaine", à quelle fréquence prenez-vous part aux activités suivantes : faire du vélo | aller au cinéma | [liste d'autres activités dont en fait vous vous fichez]) 
+
+      ▪ quels **équipements** l'utilisateur doit-il savoir **maîtriser / posséder** chez lui (ex : test à distance sur Teamviewer = un microphone ou un téléphone performant; test d'une application mobile = doit savoir utiliser son smartphone parfaitement)
+
+      ▪ quel niveau de connaissance doit avoir la personne cible (ex : une appli pour un mécanicien pro ne doit pas être testée par des amateurs ou des débutants)
+
+      ▪ **rester vague sur le motif du test** et **passer sous silence le nom du commanditaire** ("un simple entretien au sujet d'un site web"), toujours pour éviter les testeurs "professionnels" et prévenir le biais du commanditaire.
+
+      ▪ prévenir le biais d’échantillonnage en **demandant la tranche d'âge, le test, la localisation** des utilisateurs afin d'équilibrer l'échantillon de test
+
+      ▪ faire en sorte que le questionnaire soit le plus **court** possible, sinon les gens abandonnent en cours de route.
+
+      ▪ une fois que des personnes correspondant au profil recherché ont répondu au questionnaire, **appelez-les pour vérifier** que la personne sait parler correctement, qu'elle a des choses à dire et qu'elle est à peu près saine d'esprit (ex : quelqu'un qui répond "rien" ou "tuer des chats" à la question "Qu'aimez-vous faire de vos journées ?" = pas le profil idéal. Lâchez un "On vous rappellera." et envoyez un mail de remerciement)
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@organisation@@**__VI. Analyse organisationnelle__**
+
+Le but de la recherche organisationnelle est de limiter les risques de collaborations infructueuses avec les parties prenantes du projet. Il faudra donc rencontrer des personnes dont le soutien est essentiel à la réussite du projet.
+
+ • Cadres : mission et vision globale de l'entreprise
+ • Managers : affectation des ressources, impact du projet sur leurs primes et leur aptitude à faire leur travail
+ • Experts : leur savoir approfondi sur les domaines dont le design est crucial et que vous ne connaissez pas
+ • Employés : ceux qui font le travail au quotidien, en particulier ceux qui ont des connaissances sur les utilisateurs finaux
+ • Investisseurs et Conseil d'Administration s'ils ont un pouvoir concret
+
+Pourquoi ces entretiens :
+- identifier les tensions internes qui peuvent à terme nuire au projet
+- mieux définir les besoins de l'entreprise (analyse stratégique etc..)
+- prendre la mesure des conséquences (pos. ou nég.) de votre travail sur l'organisation, qui devra s'en occuper à terme, qui aura à le défendre, à communiquer dessus, à investir du temps, de l'argent, le coût de l'exploitation etc... Communiquer dès le départ sur ces impératifs permet de savoir si l'on sera suivi par l'organisation ou pas avant de se lancer.
+- s'enquérir des exigences techniques
+- comprendre les priorités de l'organisation : plus le projet est important, plus il a de chances de réussir
+- identifier les processus de prise de décisions et le workflow / la journée de travail-type
+- obtenir l'assentiment des parties prenantes : elles seront flattées d'être sollicitées sur leur sujet, et en se mettant d'accord dès le début sur l'attendu on limite les risques de rejet de la proposition
+
+Faire la liste des personnes à aller consulter, la trier par ordre de priorité et se fixer une limite de temps pour réaliser les entretiens les plus importants, qu'ils apportent quelque chose au projet ou par simple politique.
+Pour les groupes de niveaux hiérarchiques variés : insistez sur le fait que les entretiens doivent se dérouler en privé (argument de l'effet Hawthorne, que les réponses sont anonymisées et que les haut-gradés auront accès aux résultats des entretiens).
+Pour les groupes de même niveau hiérarchique, ayant les mêmes risques et bénéfices sur le projet et collaborant étroitement : entretiens de groupe. Si l'une des personnes du groupe manifeste une certaine réticence, essayer de l'avoir en entretien individuel.
+Pour les personnes jamais dispos : quelques questions essentielles par mail
+
+L'entretien :
+
+- 30mn à 1 heure
+- en privé
+- interviewer : calme, confiant, intéressé + un preneur de notes
+- mettre l'interviewé à l'aise, qu'il se sente libre de parer honnêtement et le remercier du temps accordé. Lui envoyer en avance le plan de l'entretien et les questions-clés.
+
+Le déroulé de l'entretien :
+- Introduction : se présenter, le contexte et le but de l'entretien
+- La procédure d'entretien : anonymat, quel groupe aura accès aux données
+Faire signer aux dirigeants une décharge qui garantit que l'on n'exigera pas que les sources soient balancées
+- Une conversation qui suit naturellement son cours, guidée par quelques questions de base :
+   - nom et poste
+   - depuis combien de temps exercez-vous cette fonction
+   - à quoi ressemble une journée-type de travail
+   - avec quels personnes et quels groupes travaillez-vous le plus étroitement en collaboration ? Cette collaboration est-elle fructueuse ?
+   - quelle est votre définition du succès concernant notre projet, quelles améliorations seront à prévoir une fois sa réalisation terminée ?
+   - avez-vous des inquiétudes en ce qui concerne ce projet ?
+   - quels sont selon vous les obstacles les plus importants (internes et externes)
+   - quels sont les changements dans vos interactions à l'int. et à l'ext. de l'organisation que selon vous le projet peut causer ?
+ - Quelques questions plus spécifiques au projet
+   - Quelles sont vos tâches les plus courantes au sein du système
+   - Quels problèmes constatés
+   - Quels types de solutions utilisez-vous 
+   - Avez-vous des inquiétudes concernant ce projet ?
+   - Pensez-vous que je devrais m'adresser à quelqu'un d'autre ?
+
+Que faire lorsque l'interviewé est hostile ?
+Généralement trois raisons :
+- il ne comprend pas ce qu'il fait là (n'a pas été informé)
+- il veut entrer dans un rapport de force, montrer son autorité en réaction à la personne qui a permis l'entretien et/ou vous-même
+- il sait ce qu'il fait là mais a d'autres chats à fouetter
+
+Son attitude :
+- il critique le processus de l'interview ou vous-même personnellement
+- il vous reproche la non-clarté des questions
+- il manifeste vivement son désintérêt et son impatience
+
+1. Essayer d'identifier ces personnes avant l'entretien, et leur expliquer en quoi leur participation et leur expertise va être bénéfique au projet
+2. Pendant l'entretien : clarifier la demande et demander directement, par une question ouverte quelles sont les infos les plus importantes selon lui à communiquer à ce sujet
+3. S'il n'y a vraiment rien à en tirer, coupez court
+
+Surtout, gardez une façade calme et assurée, ne pas se laisser impressionner et garder le contrôle de l'entretien. Le mieux pour cela c'est de s'entraîner avec un membre de l'équipe, qui jouera l'interviewé difficile : "Je ne comprends pas vos questions, elles n'ont aucun sens", "Pourquoi vous me demandez ça ?", "C'est bientôt fini ?", "Je ne me sens pas libre de parler de ça", "Pourquoi je vous parlerais des ça, personne ne sollicite mon avis de toute façon"...
+
+Documenter l'entretien, en notant les points suivants :
+- attitude générale vis-à-vis du projet
+- objectif (du projet) décrit par la personne
+- quel est l'intérêt de cette personne à ce que le projet réussisse ?
+- quelle est son influence
+- avec qui communique t-elle régulièrement ?
+- dans quelle mesure doit-elle participer au projet, et à quel rôle ?
+- est-ce que ce qu'elle dit est en accord avec les opinions du reste de l'organisation ?
+
+On arrête les entretiens lorsque :
+- l'identité de toutes les parties prenantes est connue, ainsi que leurs rôles, leurs attitudes, leur point de vue, leur niveau d'influence, leur intérêt pour le projet, leur disponibilité pendant le projet, ce qu'ils gagnent ou perdent si le projet réussit ou échoue, est-ce que cette personne a le pouvoir de faire capoter le projet
+- les modifications à apporter au workflow
+- les ressources humaines projets disponibles
+- les ressources nécessaires à la reprise du projet après finalisation
+- les exigences et les contraintes commerciales
+- le niveau de concordance de chaque membre de l'équipe sur les objectifs et sur ce qu'est un projet réussi
+- si les objectifs sont les mêmes pour tous ou si certains en ont d'autres plus personnels
+- comment les personnes extérieures à l'équipe considèrent le projet
+
+Exploiter les données de ces entretiens :
+- grâce aux méthodes ethnographiques
+- rédiger un énoncé clair de ce qu'il faut accomplir pour que le projet soit considéré comme un succès par l'organisation (exigences de l'entreprise). Des exigences convergentes (se rapportant toutes à la même chose), sans contradiction, une liste complète, d'actualité (pas obsolète), sans ambiguïté, réalistes et concises (moins de trois pages).
+L'objectif : consensus sur la finalité et les limites du projet avec l'organisation, meilleures chances de succès, rattacher son travail aux objectifs de l'entreprise, accroître la collaboration, faire des économies sur les coûts associés aux changements etc... Rester dans la stratégie d'entreprise.
+Ce document est à décliner en deux versions : la vraie version pour le noyau de l'équipe et la version "adoucie" pour les autres. Il contient :
+- la problématique et les suppositions : que doit nécessairement améliorer ou résoudre l'entreprise
+- les objectifs et notions de succès
+- les indicateurs de succès
+- les critères de fin de projet (quelles sont les conditions à remplir pour que le projet soit officiellement considéré comme terminé)
+- l'envergure (le périmètre projet, ce qui en fait partie et ce qui n'y est pas. Détaillez.)
+- risques, inquiétudes et plans de secours
+- les citations verbatim (anonymes)
+- les diagrammes d'activité pour présenter comment les informations devront transiter et sous quel format. Présenter le workflow actuel et le workflow d'après projet.
+
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@recueil@@**__VII. Recueil des données : général__**
+
+Avant :
+      ▪ Préparer son kit d'outils et de documents : feuilles, stylos, dictaphone, logiciel de capture vidéo/audio, logiciel de VOIP (Skype), logiciel de prise en main à distance (Teamviewer)
+      ▪ Préparer un script (un planning du déroulé du test)
+      ▪ Préparer son animation de la session
+
+Pendant :
+      ▪ Les faire dans le contexte d'utilisation normal : aller chez les utilisateurs ou faire l'entretien à distance
+
+Après :
+      ▪ Stocker toutes les données sur des disques partagés et sur des unités de sauvegarde
+      ▪ Utiliser une nomenclature, par exemple AAAAMMJJ_typetest_nomprenom.ext
+      ▪ Ajouter des notes "à chaud" dans les fichiers juste après les entretiens
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@entretiens@@**__VII. Recueil des données : les entretiens semi-directifs__**
+
+Idéal pour : savoir ce qu'il se passe dans la tête de l'utilisateur.
+Les questions ne sont pas forcément posées dans le même ordre selon le flux de pensée de l'utilisateur.
+
+Pour mener un bon entretien :
+- être un minimum sociable
+- de la pratique
+- de la retenue
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@usertests@@**__VIII. Recueil des données : les tests utilisateurs__**
+
+Idéal pour : faire un retour utilisateur sur un prototype ou un produit.
+- révéler les problèmes de nommage, de structure, de modèle mental, de déroulement
+- voir si le ton de l'interface convient au public
+- savoir comment les utilisateurs envisagent les problèmes qui sont à résoudre avec le produit
+- prouver aux clients que le projet est approuvé et peut potentiellement déboucher sur un succès auprès des utilisateurs
+
+Par contre ne comptez pas sur les tests utilisateurs pour  :
+- savoir si l'application va marcher
+- vous donner une idée révolutionnaire
+- définir quelles tâches sont prioritaires
+- servir de test d'assurance qualité
+
+Aspect commercial / design / technique / utilisabilité 
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@documentation@@**__IX. Recueil des données : l'analyse de la documentation__**
+
+Utile si : manque de temps pour des entretiens individuels ou besoin d'informations supplémentaires sur le contexte
+
+Permet de :
+- valider des hypothèses / pré-conçus
+- compléter son travail de recherche
+- éclairer le comportement des utilisateurs pour mieux formuler ses questions pour les autres entretiens et tests
+
+Les sources :
+- études qualitatives (sondages)
+- recherches effectuées au préalable par votre agence / votre client
+
+Pour chaque document :
+- Noter les questions posées (et voir si vous avez une question similaire dans vos questionnaires)
+- Vérifier l'échantillon et le comparer au vôtre
+- Faire des recherches sur qui a commandité la recherche pour identifier ses biais
+- Vérifier la date et s'il y a eu depuis un événement qui a pu changer la donne (effondrement de l'économie, lancement d'un nouveau produit...)
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@analyse@@**__X. Analyse des données__**
+
+Après le recueil : regroupement des données --> recherche de tendances significatives --> observations --> recommandations
+
+A partir des tendances identifiées, voir si chaque tendance répond à une des problématiques du début.
+Ex : grâce à mes entretiens avec le client, je connais le workflow éditorial actuel et je peux en recommander un nouveau.
+
+Travailler en groupe : inclure un maximum de monde dans l'analyse (sauf ceux qui n'y sont pas disposés, ceux qui vous feront perdre du temps et ceux qui n'attendent que les résultats), idéalement toute l'équipe projet.
+
+Matériel pour une session d'analyse :
+☐ grande salle
+☐ grand tableau blanc
+☐ post-its (différentes couleurs / taille)
+☐ stylos
+☐ appareil photo
+
+Structure d'une session d'analyse : 
+0) Penser à donner accès aux données dans un dossier partagé avant la session pour que le reste du groupe se prépare
+1) Le groupe se retrouve dans une salle 
+      ▪ Récap des objectifs et du déroulement de la phase de recherche (qui fait quoi)
+      ▪ Description de l'échantillon (nb de personnes, type d'entretien)
+      ▪ Description du processus de recueil
+      ▪ Description des différents types d'analyse qui vont être effectués pendant la session
+2) Passer ensemble toutes les notes en revue 
+3) Emettre des observations et tirer des citations
+      ▪ Ces observations et citations doivent donner des indications sur :
+         - objectifs : ce que le participant souhaite accomplir / ce que le produit propose de faire
+         - priorités : ce qui est le plus important pour le participant
+         - motivations : ce qui pousse le participant à vouloir réaliser cette tache
+         - obstacles : ce qui empêche le participant de réaliser la tâche
+         - habitudes du participant
+         - relations : les personnes avec qui le participant interagit quand il effectue la tache
+         - outils : les objets que le participant utilise en accomplissant la tache
+         - environnement : les éléments affectant la capacité ou l'envie du participant accomplir la tache
+      ▪ Regrouper les observations et les citations par idée/tendance, par type de tâche, par importance par-rapport à la réalisation du projet selon le consensus du groupe. Fixer une limite de temps pour cette partie.
+4) Emettre des recommandations à partir de ces observations 
+      ▪ Résumer les conclusions : tendances, idées et leurs implications pour le design
+      ▪ Documenter la session et partager avec l'équipe
+
+Règles du groupe pendant la session :
+- Seul objectif de la session pour le groupe : comprendre le contexte et les besoins des utilisateurs
+- Respecter la structure de la session : ne pas exprimer de tendances générales avant d'avoir passé en revue toutes les notes
+- Observation : le résultat produit (les données) - Interprétation : ce que veulent dire ces résultats
+- Ne pas proposer de solution. (pour l'instant : idées et principes)
+
+L'après-session : 
+      ▪ produire un compte-rendu adapté au public cible (présentation dataviz, rapport...)
+      ▪ recommencer
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@rechuser@@**__XI. Recherche utilisateur (ethnographique)__**
+
+Le but :
+- comprendre les véritables besoins et les priorités des utilisateurs finaux
+- comprendre dans quel contexte les utilisateurs interagissent avec le produit
+- passer de présomptions (qui peuvent être offensantes voire discriminatoires) à des faits en ce qui concerne les besoins utilisateurs
+- créer un modèle mental de la perspective des utilisateurs
+- créer des cibles de design / personas pour représenter les besoins de chaque type d'user dans chaque décision à prendre
+- voir comment de vraies personnes s'expriment pour développer le ton du site ou de l'appli
+
+De quoi se compose le contexte ?
+- l'environnement physique : où, quand, avec qui (tout seul ou avec beaucoup de monde...)
+- le modèle mental : quels sont les préconçus du public cible sur ce que contient un site / une application
+- les habitudes : comment l'utilisateur fait-il d'habitude pour répondre au problème ? Se raccrocher à des habitudes existantes est plus simple que de s'en créer de nouvelles
+- les rapports sociaux : qui fait quoi à la maison, que font les proches etc...
+
+Les quatre phases de la recherche ethnographique :
+- approfondir : la qualité vaut mieux que la quantité
+- privilégier les moments banaux du quotidiens aussi chaotiques soient-ils
+- analyse
+- mise en scène (personas)
+
+Pour savoir ce que les utilisateurs veulent, il ne suffit pas de demander car tout le monde ment, soit en pensant dire la vérité, soit en disant ce qu'ils pensent que la personne d'en face veut entendre.
+Menez vos entretiens dans le contexte naturel de l'interviewé
+
+Guide d'entretien : 
+- Description courte de l'étude et de son objectif
+- Questions factuelles ou démographiques de base : âge, sexe, lieu de résidence, poste...
+- Questions d'echauffement (small talk)
+- Questions sur le sujet principal de l'entretien
++ Bien préparer ces dernières questions en se renseignant sur le sujet
+
+Fil de l'entretien :
+1) Introduction
+- J'accueille avec le sourire, remercie la personne présente de sa participation et la met à l'aise (ambiance accueillante). 
+- Je décris l'objectif de la conversation et le sujet sans entrer dans les détails
+- J'explique ce que vont devenir les données et j'obtiens le consentement oral de la personne
+- J'incite l'interviewé à me faire part de ses reflexions et à se comporter comme d'habitude
+- Je demande si elle a des questions par-rapport au processus
+- Je commence avec les questions factuelles
+2)Corps de l'entretien
+- Je privilégie les questions ouvertes et non-orientées
+- Je parle le moins possible (c'est l'interviewé l'expert) tout en manifestant clairement mon intérêt
+- Je reste détendue, je respire, pour ne pas communiquer ma tension à l'interviewé
+- Je laisse l'entretien suivre son cours, même quand il y a des blancs... sauf si un thème abordé ne l'a pas été suffisamment ou qu'une réponse est vague, dans ce cas je demande des éclaircissements.
+- Ma liste de questions est une checklist, pas une liste à lire dans l'ordre.
+- Le preneur de notes note précisément les réflexions et comportements, en particulier les phrases et le vocabulaire exact de l'interrogé. Il peut prendre des photos de ces comportements quand cela est autorisé
+3) Conclusion : 
+- "Je n'ai pas d'autre question, est-ce que vous voulez revenir sur un point de l'entretien ?"
+- Remerciements
+- Sujets administratifs s'il y a lieu (indemnisation, prochaine étape du projet)
+- La conclusion peut être amenée prématurément en cas de sujet hostile. Dans tous les cas je reste calme et courtoise
+- S'il y a enregistrement, je reste attentive lorsque j'arrête d'enregistrer, la personne a encore l'occasion de dire des choses intéressantes 
+
+Quelques exemples de questions, des plus générales aux plus spécifiques (l'application musées pour les familles)
+- Parlez-moi de votre travail / décrivez-moi une semaine-type de votre vie / combien de temps passez-vous sur Internet / quel type d'ordinateur ou d'appareil utilisez-vous / à quel moment les utilisez-vous / les partagez-vous avec qqn / que faites-vous généralement en ligne / que faites-vous généralement les jours de congés / comment choisissez-vous vos activités / parlez-moi de l'utilisation que vos enfants font d'internet / comment choisissez-vous les sorties en famille / quels sont vos hobbies en dehors du travail / Que lisez-vous sur internet en dehors des actus / a quelle fréquence visitez-vous des musées / qu'est-ce qui vous incite à y aller
+
+Que faire des données recueillies : regroupez les entretiens et ressortez-en les thèmes principaux, en particulier les besoins et les priorités user, leurs schémas comportementaux, leurs modèles mentaux, des formulations et termes précis.
+
+Enquête contextuelle : se rendre chez la personne. Penser
+- au temps de trajet et d'installation
+- à l'endroit où s'installer sans déranger la personne
+- avant de commencer l'entretien, posez des questions sur ce que vous voyez pour mettre l'autre en confiance
+- observer et tout noter, sans intervention
+- résumer les notes et les faire valider par l'interviewé. S'il n'est pas d'accord sur certains points, le noter
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
+
+
+@@concurrence@@**__XII. Analyse de la concurrence__**
+
+La concurrence, c'est tout le monde, et plus encore ce que l'utilisateur utilise en ce moment.
+"De quoi nos clients ont besoin, et en quoi notre société est plus apte que la concurrence à répondre à ce besoin"
+
+1) Analyse SWOT : Forces (Interne/Positif), Faiblesses (Interne/Négatif), Opportunités (Externe/Positif), Menace (Externe/Négatif)
+2) Audit concurrentiel : 
+- constituer un panel contenant les principales organisations concurrentes, les applis citées par le panel utilisateur, et les entreprises "bons exemples" (qui ont résolu le problème de manière exemplaire)
+- aller sur leur site de marketing, leur Groupe FB, tester leurs applications mobiles, leur boutique en ligne, leur kiosque d'information... et 
+   - noter les idées à la fois pertinentes et accessibles
+   - répondre aux questions suivantes : comment se positionnent-ils explicitement / que disent-ils offrir; leur coeur de cible (+ la différente entre le leur et le vôtre); les principaux avantages / facteurs rendant le produit attrayant pour le public; par-rapport au SWOT, répondent-il point par point à vos propres attributs; noter ce qu'ils font particulièrement bien / mal; 
+   - identifiez les conventions et bonnes pratiques dans leur façon de faire pour rester compétitif, et les opportunités de faire beaucoup mieux pour profiter d'un de leur point faible
+3) Audit de marque : 
+- répondre aux questions suivantes :
+   - quelles caractéristiques voulez-vous coller à votre marque, et lesquels voulez-vous éviter ?
+   - est-ce que mon produit a plus à offrir que les autres en termes de valeur, si oui quoi
+   - le retour des utilisateurs sur la marque lors d'entretiens ethnographiques avec de( potentiel)s clients
+Pour beaucoup de produits numériques, il n'y a pas de marque, juste une expérience utilisateur.
+Comparez le comparable (selon l'envergure de votre entreprise)
+-Quelques caractéristiques de base :
+   - Nom : unique, sans ambiguïté, facile à prononcer et à écrire
+   - Logo : permet de se différencier de la concurrence. D'une importance variable voire faible pour un nouveau produit. Listez tous les contextes dans lesquels va apparaître votre logo : écran smartphone pour une appli native, favicon. Noter si le logo devra apparaître seul ou toujours accompagné de son nom. Analyser les logos de la concurrence. 
+4) Test des produits de la concurrence pour étudier ses forces et ses faiblesses 
+
+
+@@évaluative@@**__XIII. Recherche évaluative__**
+
+But : vérifier dans quelle mesure votre solution répond aux besoins du public avant le lancement
+
+Analyse heuristique : 2-3 évaluateurs naviguent sur le site et donnent une note par critère
+- Visibilité de l'état du système : feedback si le système va mal, est occupé, que l'on est hors ligne etc...
+- Correspondance système - monde réel : utilisez un langage et des conventions familières à l'utilisateur
+- Contrôle et liberté de l'utilisateur : toujours offrir des sorties d'urgence : annuler, revenir en arrière, repasser au menu etc...
+- Cohérence et conformité : même apparence = même usage
+- Prévention des erreurs : plutôt que de simplement permettre à l'utilisateur de changer ses erreurs, empêchez ces erreurs d'arriver (validation des données, validation avant de quitter la page etc...)
+- L'user reconnaît les options plutôt qu'il ne les mémorise
+- Flexibilité et efficacité d'utilisation : pour les plus avancés, offrir des raccourcis clavier etc...
+- Design esthétique et minimaliste, sans infos inutiles
+- Aide les utilisateurs à reconnaitre et à corriger les erreurs, grâce à des messages d'erreurs instructifs
+- Aide et documentation axée sur les taches (idéalement l'utilisateur ne devrait pas avoir à accéder à la doc pour maîtriser l'application)
+Permet d'identifier les plus gros problèmes, avant de passer aux tests utilisateurs
+
+L'utilisabilité :
+- est un élément capital pour faire rester les user plutôt que de les voir partir chez la concurrence quand celle-ci vous copiera en mieux
+- permet à un produit d'obtenir de meilleurs recommandations
+- limite les coûts niveau assistance car le produit est facile à utiliser
+
+Cette utilisabilité se définit par cinq principaux critères :
+- **Facilité d'apprentissage** est-ce que la prise en main est facile ? (dès la première utilisation, l'user se débrouille)
+- **Efficacité** est-ce que la tache s'effectue rapidement après un certain temps de prise en main ?
+- **Mémorabilité** Est-ce qu'après un certain temps de non-utilisation, l'user se remet rapidement dans le bain ?
+- **Erreurs** Est-ce que l'user fait des erreurs, si oui combien et de quelle gravité, et ces erreurs sont-elles faciles à corriger ? 
+- **Satisfaction** Le design est-il agréable à utiliser ?
+
+Fréquence des tests utilisateurs : à chaque fois qu'une grosse implémentation design est faite. Gargdez donc toujours votre liste de recrues pour les tests à jour, ainsi que votre checklist et votre kit de test :
+- un plan
+- un prototype ou une ébauche
+- 4-8 participants, basés sur des personas (très bien) ou des segments marketing (bien)
+- un animateur : même principe de comportement que pour la recherche ethno :  brisez la glace avant le test puis restez neutre et en retrait. Evitez de jouer ce rôle si vous êtes le designer, vous risquez vite de ne plus être objectif. Recrutez avec soin l'animateur quitte à en prendre un en externe, il peut facilement ruiner le test.
+- un observateur
+- un ou plusieurs modes de documentation
+- un chronomètre
+
+Un test utilisateur se base sur :
+- un persona --> le profil des personnes recrutées 
+- une tâche --> ce que la personne recrutée va devoir faire
+- un scénario, expliquant en quelques lignes pourquoi la personne s'apprête à faire cette tache. "Vous êtes [votre rôle] et vous vous apprétez à [...], comment feriez ceci pour Trucmuche ?"
+- une liste de tâches, triée par priorité
+
+Documentez votre phase de test, en notant :
+- objectifs
+- sujet du test : on teste quoi, dans quel état est ce quoi ?
+- méthodologie
+- participants et recrutement
+- Procédure
+- Tâches
+- Objectifs d'utilisabilité
+- Taux d'accomplissement (l'user a réalisé x taches sur y)
+- Taux de taches sans erreur (l'user a réalisé x taches sur y sans erreur ou difficulté)
+
+En cas d'échec de l'utilisateur, si celui-ci s'en blâme, lui demander à quoi il s'attendait
+Si vous avez le droit, enregistrez le son des entretiens, et prenez des photos horodatées lors de problèmes. Utilisez un logiciel de capture vidéo des écrans.
+Sur mobile, utilisez la technique de MailChimp, à savoir faire en sorte que l'user tienne son téléphone devant lui, faire passer un ordi portable entre lui et ses bras pour filmer le téléphone avec la webcam de l'ordinateur
+
+L'observateur doit noter :
+- la réaction du participant à la tâche
+- le temps mis à accomplir la tache
+- les utilisateurs qui n'arrivent pas à accomplir la tache
+- les termes techniques non compris par les utilisateurs
+Et en particulier :
+- les moments où l'utilisateur semble frustré
+- les citations mot à mot
+- les fonctions associées à des échecs ou à des réussites en particulier (?)
+Toujours noter l'heure à côte des annotations
+
+Troisième méthode : l'eye-tracking. Coûteux et utile uniquement pour les populations incapables d'exprimer directement ce qui attire leur regard
+
+Que faire de toutes ces données ? Une liste de modifications à apporter, en citant le problème, leur gravité, leur fréquence et les recommandations de correctifs rapides et simples à mettre en oeuvre.
+
+**Gravité**
+1- Élevée (l'utilisateur ne peut pas accomplir la tache)
+2- Modérée (pose des difficultés supplémentaires mais la tâche reste réalisable)
+3- Faible (problème mineur qui n'empêche en rien d'accomplir la tache)
+
+**Fréquence**
+1- Haute : plus de 30% du groupe d'users a eu le problème
+2- Moyenne : 11-29%
+3- Faible : < 10%
+
+= Priorisation :
+Catégorie 1 - Gravité élevée
+Catégorie 2 - Gravité modérée et/ou fréquence moyenne
+Catégorie 3 - Gravité ou Fréquence faible 
+
+Si une partie prenante est sceptique quant au changement où à l'application d'un correctif sortez les datas liées (toutes les vidéos de gens qui ont galéré sur le problème, les citations, les photos etc...)
+
+Tests utilisateurs sur les produits de la concurrence (**étude utilisabilité comparative**) :
+- Parfois proscrits dans les EULA
+- Identifiez pour un ensemble de produits à analyser un ensemble de taches communes
+- Utilisez un système de notation commun à chaque appli pour savoir laquelle est la plus utilisable globalement, et sur son utilisabilité en particulier pour chaque tache essentielle
+- Après refonte de votre application, refaites une étude pour voir si votre score s'améliore par rapport à la concurrence
+
+
+@@modeles@@**__XIV. Analyse et modèles__**
+
+**Analyse qualitative**, en groupe (pour cette phase, plus il y a de monde, mieux c'est) :
+- Examinez soigneusement les notes
+- Relevez les comportements, les émotions, les actions et les citations intéressantes
+- notez toutes vos observations intéressantes (citations, description de ce que fait l'user, les objectifs implicites et explicites qui en découlent) sur un post-it, une couleur par personne. Surlignez les observations qui semblent cibler un besoin particulier d'un type d'utilisateur pour la création de personas
+- regroupez les notes sur un tableau blanc
+- observez les tendances qui apparaissent
+- réorganisez les notes par tendance, et leur donner des noms
+- Extraire des éléments de recommandation de design par-rapport à ces tendances
+
+Tous ces éléments constituent un diagramme d'activité, qui servira pour :
+- la création de personas
+- représenter visuellement la phase de recherche
+- identifier les fonctionnalités prioritaires
+- de point de départ à de nouvelles recherches plus précises
+- de point de référence pour prendre de nouvelles décisions
+
+**Personas**
+Le persona est la clé de l'UCD, il permet de prendre des décisions de design qui ont du sens du point de vue de l'utilisateur et pas juste "comme ça". 
+Un persona non basé sur une recherche utilisateur ne sert à rien.
+Faites un nombre le plus réduit possible de persona, si nécéssaire intégrez des profils différents à un seul persona si les deux ne sont pas en contradiction.
+
+- Photos : des vrais gens, pas des banques d'image, licence Creative Commons sur Flickr par exemple
+- Nom : un nom qui correspond à la cible et facile à retenir pour l'équipe. Chercher sur LinkedIn par exemple.
+- Informations démographiques : du segment démographique cible. Soyez plausible sans être cliché. Genre, âge, origine, niveau d'éducation, travail, situation matrimoniale, lieu de résidence... S'il vous manque des infos, cherchez en ligne des gens qui correspondent à votre base : citation, contexte, photos du lieu de travail etc...
+- Rôle + Type cible : d'un véritable utilisateur (ex : le professeur / le touriste)
+- Citation : tirée d'un véritable entretien, qui répond à une question posée révélant à la fois un comportement et un état d'esprit "Quelle est la chose la plus importante pour vous lorsque vous planifiez vos weekends ?"
+- 3-4 Objectifs users relevés lors de la recherche user
+- Comportements et habitudes : "éducation des enfants", "Enseignement", "Activités de recherche en ligne", "Passer régulièrement d'un appareil à un autre", "Prendre des décisions avec une autre personne", "Faire des plans à la dernière minute"...
+- Compétences : niveau d'experience technique. A ne pas surestimer.
+- Environnement : Matériel utilisé, logiciels, accès à internet, que ce soit au travail où à la maison, seul ou entouré, en continu sur le web ou par salves///
+- Relations : leur conjoint, leur enfant, leurs colocataires influencent-ils la manière dont ils interagissent avec le produit (double persona)
+- Scénarios : pour étoffer les exigences ; pour explorer les solutions potentielles; pour valider les solutions proposées; comme base de test de test utilisateur
+Commencer par une amorce tirée de vos entretiens "Je me réveille à 8h le samedi et je prends mon café, les enfants courent à travers la maison..."
+Diffèrent des cas d'utilisations (qui raconte l'interaction user / système, utilisé pour déterminer les exigences fonctionnelles du système)
+
+Exemple : Diane et sa famille viennent de s'installer dans les environs, elle est très prise par son travail en semaine, mais le weekend est reservé à ses enfants.
+- Son objectif : trouver des activités locales intéressantes pour son fils et reposantes pour elle et son mari
+- motivation : elle passe en rentrant chez elle devant une affiche du musée des sciences, ce qui l'incite à aller voir le site internet sur son iphone
+- Sa tâche : déterminer le meilleur moment pour aller au Musée des Sciences
+
+**Modèles mentaux** 
+Modèle mental :
+Définition 1 : somme des croyances et préconçus qu'une personne a d'un système, de son fonctionnement et de son organisation
+Définition 2 : modèle que crée le designer pour coller au plus près de Définition 1
+
+Le but :
+- se baser sur un modèle mental général qui colle à l'expérience des utilisateurs plutôt qu'à l'experience du designer
+- savoir ce qu'il se passe dans la tête de l'user, et pouvoir communiquer cette connaissance au reste de l'équipe
+- prioriser les fonctionnalités
+- organiser les informations
+- identifier les domaines où certains besoins de l'user n'ont pas été pris en charge
+
+Pensez aux modèles mentaux des activités que vous voulez rendre possible sur votre site web ou votre application.
+Exemple : je veux retravailler le design d'un bus --> Quel est le modèle mental d'un bus; je veux travailler le design d'une appli qui permet de prendre le bus à l'heure --> quel est le modèle mental de l'action "Regarder les horaires du bus" etc...
+Vous ne pouvez pas vous contenter de votre propre modèle mental, il faut se baser sur :
+- la recherche utilisateur
+- le diagramme d'affinité 
+- reprenez les post-its de votre diagramme d'affinité et regroupez-les par pile représentant l'espace cognitif de l'utilisateur afin de créer le modèle. Ces piles sont groupées par action et nommées d'après des actions, des croyances et des sentiments
+
+
+{{PawfalikiImages/mm.gif|Modèle mental|800}}
+
+Faire ce diagramme vous permet de :
+- faire une cartographie conceptuelle pour justifier des contenus et des fonctionnalités implémentées
+{{PawfalikiImages/mc.gif|Modèle mental|800}}
+- **analyser les lacunes** entre ce qui est offert par l'application et les besoins & attentes de l'user : vous avez oublié un besoin et vous n'avez donc pas implémenté de solution pour, ou vous avez implémenté des fonctionnalités qui ne répondent à aucun besoin
+
+**Analyse des tâches** : décomposer les étapes, cognitives et physiques, nécessaires pour accomplir une tâche.
+Se réalise à partir de l'enquête contextuelle et des entretiens utilisateurs, lorsque vous ambitionnez de remplacer une tâche concrète par une interface, ou que vous modifiez la nature même d'une interaction physique (changement de plateforme)
+Noter :
+- La situation initiale
+- L'événement déclencheur de la tâche
+- La décomposition de la tâche, avec pour chaque étape les informations et outils nécessaires, et si la tâche risque d'être interrompue à cette étape
+Et structurer le tout sous forme d'un workflow puis d'un diagramme d'activité
+Ce diagramme vous servira à :
+- identifier les tâches où un contenu ou une fonctionnalité supplémentaire serait bien utile
+- Prendre en compte un maximum de facteurs environnementaux qui impactent le parcours utilisateur
+
+
+@@qualitative@@**__XV. Recherche qualitative__**
+
+Taux de conversion : conversion = l'user a réalisé une action précise que vous vouliez qu'il fasse (s'inscrire à la newsletter, faire un don etc...)
+Pour chaque action voulue et réalisée, un taux de conversion.
+
+**Analyse d'audience**
+- Nombre total de visites (s'il augmente c'est bien)
+- Nombre total de pages vues (à priori s'il augmente c'est bien, mais ça peut aussi vouloir dire que les visiteurs doivent beaucoup chercher pour trouver l'information)
+- Nombre moyen de pages par visites (idem que précédent)
+- Taux de rebond (à priori s'il baisse c'est bien, mais ça peut aussi vouloir dire que le site reçoit peu de trafic via les moteurs de recherche)
+- Temps moyen passé sur le site
+- Pourcentage de nouveaux visiteurs
+- Source du trafic
+- Analyse des cohortes pour vérifier si l'user clique bien au bon endroit
+Se baser sur les moyennes d'autres sites du même secteur pour se fixer des objectifs. Si ceux-ci ne sont pas tenus, analysez les stats et priorisez les changements, en commençant par le taux de rebond (le plus important étant que les gens ne s'en aillent pas dans la seconde, puis les faire rester la page suivante etc...). Clarifiez les points d'entrée les plus utilisés en explicitant ce que vous voulez que les users fassent par le design (ergonomie) de la page et son contenu.
+
+**Tests A/B** (ou Test A/Z, test multiglobal, split testing, test d'expérience globale...)
+Essai clinique sur une page ou un ensemble d'élément sur votre site. Vous faites deux versions, la soumettez à deux groupes de visiteurs et en fonction du résultat (le taux de visiteurs qui cliquent exactement sur l'élément que vous vouliez, pour chaque version) vous gardez la version qui a le mieux marché. 
+- Choisissez vos objectifs ("Je veux qu'il clique sur 'Faites un don'")
+- Créez des variantes : formulation, taille, couleur et position du bouton, texte présent sur la page, prix ou offre proposée, image ou type d'image utilisé (photo vs. illustration)
+- Séléctionnez une date de début appropriée
+- Poursuivez l'expérience jusqu'à ce que le nombre de visiteurs souhaités pour le test soient passés sur le site 
+- Analysez les données
+- Déterminez les mesures à prendre : choisir l'une des deux versions ou faire d'autres tests
+Basez vous toujours sur une statistique réelle (le taux de conversion) pour le test. Votre objectif sera d'en augmenter les résultats.
+Pour la taille de l'échantillon : si la modif' est très importante, un petit échantillon peut suffire. Par contre pour de petites modifications il faut un très large échantillon pour pouvoir généraliser. En ce qui concerne la durée, plus vous attendez mieux c'est. Les personnes venant d'une source précise à un moment précis (quelqu'un de connu a fait un super article sur vous) peuvent avoir un préjugé sur ce que contient le site et être particulièrement positifs / négatifs, ce qui fausserait les résultats.
+
+Les limites du test A/B :
+- il est utilisé sur le site en production, et voir régulièrement des différences d'une navigation à une autre peut déstabiliser les visiteurs
+- posez vous la question de savoir si le problème vient vraiment de la disposition des éléments ou s'il ne faut pas carrément repenser la page / le site
+
+[[#sommaire|↑ Revenir au sommaire ↑]]
