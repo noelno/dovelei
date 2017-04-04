@@ -1,0 +1,180 @@
+Desktop : Chrome (Blink), Internet Explorer (Trident), Firefox (Gecko), Safari (WebKit) et Opera (Blink - fork de WebKit)
+Mobile : Android Browser, iPhone, UC Browser, Nokia S40 et S60 et Chrome (tous Webkit) + Opera Mini et Opera Mobile
+
+L'utilisateur envoie une URI (Uniform Resource Identifier).
+
+Interface utilisateur : tous les éléments du navigateur avec lesquels l'utilisateur peut interagir, en dehors du document : barre d'adresse, bouton retour/revenir à la page, bouton de mise en favoris…
+Moteur du navigateur : gère les interactions entre l'interface user et le moteur de rendu.
+Moteur de rendu : gère l'affichage du document demandé (nativement du HTML et du XML, du PDF par plugin)
+Interconnexion de réseaux : interface entre les différents types de réseaux, permet d'appeler des ressources distantes
+UI backend : rendu de widgets basiques (menu déroulant, fenêtres…) à partir de méthodes de l'OS
+Analyseur et interpréteur JS
+Stockage de données : stockage local, localStorage, IndexedDB, WebSQL and FileSystem
+
+Chrome et d'autres utilisent une instance de moteur de rendu par onglet.
+
+WebKit était initialement un moteur open-source Linux qui a été modifié par Apple.
+
+1) Requête
+
+2) Le moteur de rendu récupère le contenu demandé via la couche réseau, en blocs de 8kb.
+   Parse le HTML et convertit les éléments en noeuds de l'arbre DOM (content tree)
+   Parse le CSS des feuilles de style externes et des balises style
+   Fusionne le contenu et le style pour créer l'arbre de rendu : des rectangles (éléments visuellement formattés) ordonnés par ordre d'apparition sur l'écran, contenant les attributs visuels comme la couleur et les dimensions
+   Attribue à chaque noeud de l'arbre de rendu des coordonnées d'affichage sur l'écran
+   Parcourt l'arbre de rendu et affiche chaque noeud avec la couche UI backend
+   
+   Il ne s'agit pas d'étapes séquentielles dans le sens où le navigateur n'attend pas que chaque étape soit finie pour passer à la suivante.
+   
+WebKit fonctionne ainsi
+Gecko a une étape supplémentaire, le content sink, déclenché juste après le HTML parsing
+
+Parser le document : le lire et le traduire de façon à le rendre utilisable. Il est traduit en arbre de noeuds représentant la structure du document.
+Pour pouvoir être parsé, le langage utilisé doit respecter une syntaxe et un vocabulaire pré-déterminés = une grammaire context-free.
+
+Parsing :
+* analyse lexicale : découpe le flux d'entrée en jetons, c'est à dire en mots-clés valides, faisant partie du vocabulaire.
+Elle est réalisée par le lexer (ou tokenizer). Celui-ci s'occupe aussi de supprimer les espaces et sauts de ligne
+* analyse syntaxique : application des règles de syntaxe
+
+Le lexer fournit un token au parseur, qui va le comparer à un ensemble de règles de syntaxes. 
+S'il matche avec une règle, il est ajouté au content tree. 
+S'il ne l'est pas, il est stocké en interne en attendant de trouver une nouvelle règle qui matcherait en associant le token stocké et le token suivant. 
+Si à la fin rien ne matche avec les tokens restants, une exception est levée (erreur de syntaxe).
+
+Dernière étape : Traduction du parse tree en code machine
+
+Le vocabulaire est généralement exprimé sous forme d'expression régulière.
+La syntaxe est généralement exprimée au format BNF. Une grammaire context-free est une grammaire qui peut être entièrement exprimée en BNF.
+Deux méthodes de parsing :
+* top-down : recherche des tokens matchant la règle de plus grand niveau.
+* bottom-up : lit de gauche à droite et vérifie pour chaque token + les précédents si une règle matche. (shift-reduce parser)
+
+Si vous avez écrit une grammaire context-free, vous pouvez utiliser un générateur de parseur (Bison, Yacc) et de lexer (Flex, Lex) pour parser votre langage.
+
+Un parseur HTML parse le markup HTML. Le vocabulaire et la syntaxe HTML est définie dans les specs W3C, mais ce n'est pas une grammaire context-free. 
+Elle est plus souple que du XML, certaines balises n'ont pas besoin d'être ajoutées, la plupart des navigateurs tolèrent certaines erreurs courantes, le markup peut changer dynamiquement…. Le XML peut être parsé, pas le HTML.
+Le parseur HTML fonctionne donc différemment : 
+* tokenization (lex) : détecte le token (balise ouvrante, balise fermante, noms d'attributs, valeurs d'attributs) et le transmet au constructeur de l'arbre DOM.
+L'algo de tokenization est une machine à états : par défaut elle est à l'état "Donnée", jusqu'à ce qu'elle tombe sur un caractère qui la fasse changer d'état. Par exemple un chevron ouvrant la fait passer à l'état "Balise ouvrante".
+Le HTML est défini au format DTD, un format utilisé par les langages SGML pour définir tous les élements autorisés, les attributs et leur hiérarchie.
+
+Document Object Model. Le parse tree est constitué de noeuds DOM, c-à-d des éléments qui implémentent une interface DOM. La racine de cet arbre est Document.
+Le parseur est crée au même moment que le DOM. 
+Comme pour la tokenization, l'algo de construction de l'arbre DOM est une machine à états : on passe de l'état initial à l'état "avant HTML" lorsque le premier token (<html>) est reçu.
+Lorsque le token est reçu, l'élément HTMLHtmlElement est crée et ajouté à l'arbre DOM. Une fois ajouté à l'arbre, on passe à l'état "Avant Body".
+
+Quand le parsing se termine, le navigateur marque le document comme interactif, et les scripts différés s'exécutent. Le document passe ensuite à l'état complet et l'événement "load" est déclenché.
+
+Tolérance des erreurs : quand un document est bien formé, le parsing est beaucoup plus rapide.
+Erreurs tolérées : 
+* modèle de contenu non respecté (élément non autorisé dans l'élément parent). Dans ce cas le parent est fermé juste avant l'élément interdit par le navigateur.
+* autres cas : fermer les éléments qui précèdent, ou ignorer l'élément.
+
+Exemples d'interprétation spécifiques à Webkit : 
+* deux <table> emboîtées l'une dans l'autre sont interprétées comme deux tables voisines et non deux tables parentes / enfant
+* deux formulaires emboîtés : le formulaire enfant est ignoré
+* un niveau d'imbrication des éléments supérieur à 20 : les éléments du 21è niveau et plus sont ignorés
+* des pages où il y a du contenu après les balises fermantes body et/ou html 
+
+CSS utilise une grammaire context-free, définie dans les spécifications.
+Webkit parse le css avec Flex et Bison (parseur bottom-up), Gecko utilise un parseur top-down codé maison.
+Chaque fichier CSS est parsé en objet feuille de style. Chaque objet feuille contient des objets règles CSS, chaque règle contient des objets sélécteurs et des objets déclaration (contenant un objet propriété et un objet valeur), correspondant à la grammaire CSS.
+
+Le web est synchrone : les scripts sont exécutés dès qu'ils sont lus, ce qui interrompt le parsing. 
+Les feuilles externes doivent en plus être téléchargées avant de pouvoir être lues et exécutées. L'exécution peut cependant être différée et le téléchargement ne pas interrompre le parsing complet du document grâce à l'attribut defer
+Parsing spéculatif : pendant l'exécution des scripts, précharge les autres ressources appelées par le document (spécifique à WebKit et Gecko)
+Les feuilles de style sont chargées en asynchrone mais selon le moteur utilisé l'exécution des scripts (Gecko), ou du moins aux instructions essayant d'accéder aux styles, peut être suspendue en attendant le parsing complet des styles, car un script accédant à un style pas encore défini peut être source de bugs.
+
+Le DOM tree et le render tree sont construits simultanément. Il est constitué de frame ou render object qui s'autoaffiche. 
+Un renderer correspond à un noeud boîte CSS, et contient des informations génériques comme sa largeur, sa hauteur et sa position.
+Le type de renderer dépend du display et du type de balise utilisé (par exemple les éléments de formulaire n'ont pas la même présentation et ne contiennent pas d'information géométrique)
+Il n'y a pas de relation 1-1 entre l'arbre DOM et l'arbre des renderers : les éléments en display:none n'ont pas de renderer (contrairement aux éléments visibility:hidden), tandis que certains éléments ont plusieurs renderers : l'élément select en a minimum trois. Dans la gestion des erreurs, les éléments anonymes crées ont aussi leur renderer
+Enfin les éléments du DOM peuvent ne pas être dans le même ordre dans le render tree : éléments retirés du flux…
+
+La présentation est déléguée au FrameConstructor sous Firefox. Celui-ci calcule les styles (voir la suite) et crée le cadre correspondant
+Sous WebKit chaque élément du DOM a une méthode attach, utilisée pour attacher le renderer.
+La racine du render tree est ViewportFrame (Firefox) ou RenderView (WebKit), il correspond aux éléments du DOM html et body, et portent ce nom car la taille correspond à la taille du viewport.
+Il s'agit du containing block, le bloc contenant tous les autres
+
+Calcul des styles : 
+Attributs visuels autre que style (bgcolor) + les feuilles de style (auteur, user et navigateur) + les styles inline
+Les noeuds référencent des objets RenderStyle. (WebKit) Ces noeuds peuvent être partagés si :
+* même état mouse (pas l'un des deux en hover)
+* pas d'id
+* même balise
+* même classe
+* mapped attributes
+* même état de lien (pas l'un visité et pas l'autre)
+* même état de focus (pas de focus)
+* pas de style inline sur l'élément
+* pas de sélécteur d'adjacence déclaré quelque part (+, :first-child, :last-child)
+* ne doit matcher avec aucun sélécteur d'attribut
+
+
+
+Firefox : rule tree et style context tree
+
+Firefox a 2 arbres pour traiter les styles : un arbre pour les règles CSS et un arbre de contexte de style
+Webkit n’a pas ces arbres, chaque noeud du DOM pointe directement vers le bon style.
+Le contexte de style contient en cache toutes les valeurs finales (valeurs en px au lieu des % par exemple), ce qui évite aux autres noeuds partageant les mêmes styles de devoir refaire le calcul.
+Toutes les règles qui matchent sont stockées dans un arbre. Les noeuds au plus profond de l’arbre (généralement les plus spécifiques) ont la priorité. L’arbre contient tous les chemins des règles qui ont été identifiées. Lazy load :  dès qu’un noeud de style doit être processé, la route du style est ajoutée à l’arbre
+
+Les style contexts contiennent des structs contenant des infos de style d’une certaine catégorie (bordure, couleur…)
+Les propriétés du struct sont soit définies pour l’élément, soit héritées d’un parent. C’est pourquoi les noeuds les plus profonds sont traités en priorité : s’il n’ont pas de propriété définie dans le struct, on remonte regarder dans le struct du noeud parent.
+
+Je descends dans l’arbre, parse le HTML pour créer un élément div.
+Pour créer le style contexte de cet élément :
+- on liste toutes les règles matchant cet élément
+- on parcourt l’arbre des règles en suivant une route
+on commence par suivre une route dans l’arbre des règles de style. L’arbre des règles peut ne pas avoir préchargé tous les noeuds. On commence du noeud le plus spécifique et on remonte au parent pour remplir le struct.
+
+1. Conversion des bytes en caractères en fonction de l’encodage du fichier
+2. Tokenisation des caractères par le lexer. En se basant sur la grammaire du langage HTML + une certaine tolérance des erreurs, définit des jetons : balise ouvrante, balise fermante, donnée seule
+   Pendant la tokenisation, rencontre une balise link vers une ressource CSS, télécharge son contenu en asynchrone et tokenise son contenu
+3. Conversion des tokens HTML en éléments de l'arbre DOM par le parseur HTML
+4. Parcours de l'arbre DOM et pour chaque élément du DOM visible, crée un nouveau noeud dans l'arbre CSSOM regroupant toutes les règles ciblant directement l'élément avec leur valeur calculée en cache.
+   Si deux éléments partagent les mêmes styles, on ne créera pas d'autres noeuds mais on réutilisera les mêmes.
+5. Firefox utilise un arbre intermédiaire appelé context tree, qui pour chaque élément du DOM, même invisible, contient uniquement une référence vers un noeud de l'arbre CSSOM.
+6. Construction de l'arborescence d'affichage :
+   Pour chaque noeud du DOM, récupérer tous les styles de l'élément, en donnant la priorité aux styles les plus proches de lui dans l'arbre CSSOM (ciblé directement, hérité ou par défaut)
+   Pour Firefox c'est rapide, il se réfère au context tree pour trouver et remonter le bon noeud dans l'arbre CSSOM.
+   Pour Webkit, il recueille tous les styles et les affecte par importance.
+   
+   
+Les règles sont triées par hashmap en fonction de leur sélécteur : id, class, élément ou autre. Ensuite pour trouver les règles matchant avec un élément, on sait d'avance dans quelle map il n'est pas neccessaire de chercher.
+Les règles de même priorité sont affichées selon leur spécificité, ou si elle est égale, selon leur ordre d'apparition dans la cascade
+
+
+Layout. La position du renderer racine est 0,0 et ses dimensions sont celles du viewport. Chaque renderer a une méthode layout et une méthode reflow. On descend dans l'arbre des renderers en commencant par celui de HTML.
+Deux états : dirty pour indiquer que le renderer a été ajouté ou changé, children are dirty si l'un des enfants est dirty
+
+La fonction layout est déclenchée quand un style global est modifié (la police par ex.) ou que le viewport est redimensionné
+
+All renderers have a "layout" or "reflow" method, each renderer invokes the layout method of its children that need layout.
+Le renderer parent :
+- détermine sa propre largeur
+- positionne chaque enfant à l'interieur
+- appelle la méthode layout si l'enfant est "dirty"
+- utilise la hauteur et les marges verticales de ses enfants pour calculer sa propre hauteur
+- dirty passe à false
+
+
+Painting
+Les renderers ont une méthode paint. Comme pour le stacking order, la peinture se fait dans l'ordre suivant :
+
+    background color
+    background image
+    border
+    children
+    outline
+
+Changer la couleur d'un élément ne fait que déclencher paint sur l'élément
+Changer la position de l'élément déclenche layout et paint sur l'élément et ses enfants
+Changer la police globale va flusher tout l'arbre (layout et paint de toute la page)
+
+Canvas : transparent par défaut, sauf la première boîte visible sans parent (body)
+
+block: generates a block box.
+inline: generates one or more inline boxes.
+none: no box is generated.
