@@ -123,6 +123,6 @@ Les noms de classes se rapportent quasiment tous au contenu et pas à la présen
 
 Contrairement au CSS les scripts ne sont pas tous chargés dans le pied de page mais à divers endroits du code.  
 
-Il y a 7 scripts donc deux pour d'anciennes versions d'IE (notamment matchmedia comme alternative JS aux media queries).
+Il y a 7 scripts donc deux pour d'anciennes versions d'IE (notamment le polyfill [matchmedia](https://github.com/paulirish/matchMedia.js/) pour IE9).
 
 Mozilla utilise Google Analytics, ce qui peut surprendre vu leur militantisme sur la protection des données personnelles, mais [il s'agit selon eux d'une version customisée et anonymisée](https://bugzilla.mozilla.org/show_bug.cgi?id=1122305#c8). 
