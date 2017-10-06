@@ -10,7 +10,7 @@ Chaque version alternative est listée dans l'entête sous forme d'un élément 
 
 La version canonique (version américaine) figure en haut de cette liste avec un attribut `rel="canonical"`.  
 
-On remarquera que bien que l'url de la page en cours contienne un paramètre (`oldversion`), ce paramètre n'a pas été repris dans l'url canonique ou dans les versions alternatives, probablement car la présence de ce paramètre n'a aucune incidence sur le contenu ou la présentation de la page, et sert uniquement à des fins statistiques.  
+On remarquera que bien que l'url de la page en cours contienne un paramètre (`oldversion`), ce paramètre n'a pas été repris dans l'url canonique ou dans les versions alternatives, probablement car la présence de ce paramètre n'a aucune incidence sur le contenu ou la présentation de la page.  
 
     <link rel="canonical" hreflang="en" href="https://www.mozilla.org/en-US/firefox/56.0/whatsnew/">
     <link rel="alternate" hreflang="x-default" href="https://www.mozilla.org/en-US/firefox/56.0/whatsnew/">
@@ -31,7 +31,7 @@ Plusieurs fichiers js utilitaires y sont concaténés et minifiés.
 
 Note : le site de Mozilla est open source, comme tout ce qu'ils font. Leur bundle js de base non compressé est consultable ici : https://github.com/mozilla/bedrock/tree/master/media/js/base
 
-Pour les métas réseaux sociaux, [des twitter cards de type `summary` et `app`](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started), un lien vers la page facebook de Mozilla et des propriétés opengraph sont déclarées : type, site_name, locale, url, image, title et description. 
+Pour les métas réseaux sociaux, [des twitter cards de type `summary` et `app`](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started), un lien vers la page facebook de Mozilla et des propriétés opengraph sont déclarées : `type`, `site_name`, `locale`, `url`, `image`, `title` et `description`. 
 Sur cette page les metas ne servent à rien (en tout cas pour la Twitter Card, je n'ai pas testé le reste) car l'indexation de la page est bloquée par la déclaration `<meta name="robots" content="noindex">`
 
     <meta property="og:type" content="website">
@@ -84,7 +84,7 @@ La liste de nouvelles fonctionnalités, bien que très stylisée et écrite en g
 
 En ce qui concerne les liens internes, ils sont toujours relatifs.
 
-On y trouve un exemple d'utilisation de l'attribut `rel="license"`, sur leur texte de copyright :
+On y trouve notamment un exemple d'utilisation de l'attribut `rel="license"`, sur leur texte de copyright :
 
           <p class="license">Portions of this content are ©1998–2017 by individual mozilla.org contributors. Content available under a <a rel="license" href="/en-US/foundation/licensing/website-content/">Creative Commons license</a>.</p>
 
