@@ -84,6 +84,10 @@ La liste de nouvelles fonctionnalités, bien que très stylisée et écrite en g
 
 En ce qui concerne les liens internes, ils sont toujours relatifs.
 
+On y trouve un exemple d'utilisation de l'attribut `rel="license"`, sur leur texte de copyright :
+
+          <p class="license">Portions of this content are ©1998–2017 by individual mozilla.org contributors. Content available under a <a rel="license" href="/en-US/foundation/licensing/website-content/">Creative Commons license</a>.</p>
+
 En bas à droite du site, il y a un menu déroulant de choix de langues. Là encore les développeurs ont pensé à tout :
 * spécifier dans l'attribut `lang` de chaque option de quelle langue il s'agit (car le contenu et la valeur de l'option ne suffisent pas)
 * une alternative no-js. Normalement le changement de page s'opère quand la valeur séléctionnée change. Mais lorsqu'il n'y a pas de javascript, un bouton permet d'envoyer le paramètre `lang` à l'url de la page en cours, et donc d'effectuer en back les traitements qui vont gérer la redirection vers la version de la langue choisie. Ingénieux.
