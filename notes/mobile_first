@@ -1,0 +1,123 @@
+* utiliser les capteurs du téléphone non disponibles sur desktop (accéléromètre)
+* utiliser le double-tap pour remonter en haut de page
+* économiser la partie haute du viewport pour du contenu important
+* adapter le site à la puissance (plus faible) des processeurs mobiles
+* éviter les popups interstitiels en général, préférer les messages en haut de fenêtre facilement refermables.
+* ajouter des fonctionnalités supplémentaires sur la version mobile : liens de partage épinglés
+* une idée principale par écran
+* mettre plus de choses sur un seul écran plutôt que de renvoyer sur des sous-pages
+* rendre le site plus aéré et clair, plutôt que de supprimer des éléments
+* les guidelines material design et apple sont des recommandations précieuses mais pas forcément à suivre à la lettre
+* orienter le design sur ce qui intéresse les utilisateurs (valeur ajoutée), sur ce qui résout un problème. Procéder à des tests utilisateurs.
+* Determine the goals of your website, find out who your target audience is, and test your ideas to gain useful data about your visitors.
+
+* oblige à faire des choix sur ce qui est prioritaire en termes de contenu
+* optimisé pour le mobile = optimisé pour le bureau (performances)
+* on surfe sur bureau, on plonge sur mobile. Quand on a besoin de quelque chose de précis tout de suite. Feedback rapide et pertinent. diving et snorkeling.
+* lieu et moment pour le mobile : pas seulement en mobilité, loin de là
+
+Idée : affichage infini d'articles les uns à la suite des autres
+
+Capacités du mobile :
+* réalité augmentée
+* direction (boussole)
+* appareil photo / vidéo
+* géolocalisation
+(the nearest tube)
+* gyroscope
+* toucher : glisser, pincer
+* audio
+* connexion bluetooth / infrarouge
+* proximité avec un autre objet
+* capteur de lumière
+* NFC RFID
+
+Moyens de détection de la localisation
+GPS : à 10m près, mais long (2 à 10mn) et draine la batterie
+Wifi : à 50m près, quasi instantanément
+Triangulation cellulaire : entre 100m et 1500m près, quasi instantanément
+Ip : fiable à 99% pour le pays, a 46% pour la ville
+
+Tilt scrolling : scrolle automatiquement en inclinant l'écran vers l'arrière pour descendre et vers l'avant pour remonter
+Détection du rate de mouvement de l'appareil (secouer)
+
+Limitation :
+* espace disponible réduit à l'horizontale
+
+Trois statuts :
+* je m'ennuie
+* je suis à un endroit précis, sur place
+* j'ai une micro-tâche à accomplir
+(urgent now, repetitive now, ennui maintenant)
+
+Quatre principales interactions :
+* Rechercher/Trouver (information précise, sur place) : j'ai besoin immédiatement d'une information qui a un lien avec mon emplacement actuel
+* Explorer/Jouer (je m'ennuie, sur place) : je veux tuer le temps avec quelques distractions.
+* Vérifier/Statut (répétition, micro-tâche) : quelque chose d'important pour moi est régulièrement mis à jour et je souhaite pouvoir garder un œil dessus
+* Éditer/Créer (modification urgente, micro-tâche) : je dois faire quelque chose d'urgent
+
+Par exemple pour Flickr
+* Vérifier/Statut : photos des dernières publications de ses amis
+* Explorer/Jouer (je m'ennuie, sur place) : explorer de belles photos.
+
+* Règle : le contenu précède la navigation.
+- bouton pour déplier la navigation
+- ou bouton pour sauter à la navigation de pied de page
+- ou navigation seule (icône), de préférence fixée en haut
+* minimiser le nombre d'actions possibles pour limiter le nombre d'erreurs possibles (distraction-free)
+
+* boutons plus gros (44pt au carré selon Apple soit presque 60px, 9mm selon Microsoft - 7mm minimum, et 2mm d'espace entre chaque cible)
+* 70% à 90% de droitiers : cibler le milieu ou le bas de l'écran, de gauche à droite. Le coin supérieur gauche étant le plus difficile à atteindre avec le pouce, y placer les actions destructives (Annuler, supprimer).
+* les mouvements (natif) : tap, double tap, drag (glisser), swipe (balayer), pinch (pincer, resserrer), spread (écarter), pression longue, press and tap, press and drag, rotate.
+  les mouvements navigateurs : tap, drag et swipe au minimum.
+ 
+Touch gesture référence : https://www.lukew.com/ff/entry.asp?1071. Catalogue de gestes courants pour chaque type d'action.
+Privilégier les NUI (interfaces naturelles) aux GUI à pointeurs. Utiliser des affordances - Descriptifs ou animation -  pour que l'utilisateur sache quels gestes effectuer.
+Repenser les interactions aux survols, qui sont souvent de trop et découvertes par hasard par l'utilisateur. Au choix : afficher par défaut, révéler (par pression ou balayage), mettre sur un écran séparé, ou mieux : rien.
+Le on-tap sur mobile révèle le hover.
+les actions et les informations révélées par un geste tactile qui n’est pas évident (comme un balayement) doivent être accessibles par un autre moyen. Par exemple pour supprimer un mail on peut soit faire un swipe pour afficher les icônes de suppression, soit cliquer sur le message pour afficher une barre de navigation.
+Définir explicitement les styles :hover et :focus de tous les éléments d'interaction pour ceux qui utilisent leur trackpad ou d'autres boutons plutôt que le tactile
+
+Saisie :
+Intitulés clairs
+label au-dessus plutôt qu'à côté, pour économiser de la place (Bootstrap)
+[L'auteur recommande quelque chose de déconseillé en termes d'accessibilité : substituer un label au placeholder]
+Styles des inputs :
+Dans certains vieux navigateurs, le placeholder disparait dès le focus, même quand on n'a pas encore commencé à écrire.
+Favoriser certains input pour le mobile à la place du menu déroulant classique : date (calendrier), range pour un nombre réduit de valeurs (+/-). Pré-remplir le formulaire avec les valeurs par défaut les plus susceptibles d'être utilisées.
+Quand il y a beaucoup d'options dans un menu déroulant, choisir un autre mode de présentation que le select par défaut.
+Utiliser url, email, tel, number comme type d'input sur iOS pour adapter le clavier
+Attributs: autocapitalize pour les noms propres et les lieux, autocorrect pour les zones de texte et les champs au format web (penser à effacer les espaces finales)
+Utiliser des masques de saisie
+
+Ensemble de champ séquentiel : tous les champs doivent être renseignés ensemble pour accomplir une tâche (s'inscrire, acheter...)
+* réduire le formulaire au strict minimum
+* prendre en compte la hauteur du clavier pour designer des champs longs (moitié de l'écran)
+Formulaire de maj : plutôt que de rendre éditable tout le formulaire, utiliser une mise en forme différente
+Formulaire contextuel : formulaire lié à un post, contenant généralement
+* option permettant de voir le mot de passe
+* Authentificatidentification Touch ID ou Face ID
+
+Autres fonctionnalités :
+* géolocalisation plutôt que de saisir sa localisation
+* appareil photo pour Google Goggles
+* NFC
+
+Mise en page :
+* HD
+* mise en page élastique (occupe l'espace disponible)
+* RWD EM
+* adapter l'interface utilisateur aux usages : TV s'il s'agit d'audio/vidéo, bureau, mobile…
+* simplifier, ne mettre que le nécessaire afin de pouvoir espacer sur mobile
+
+
+Autre ressource instructive :
+
+Mobile in the future
+Luke Wroblewski Conversions @ Google November 2017
+https://www.lukew.com/ff/entry.asp?1982
+
+* des tas de statistiques très parlantes sur l'explosion du mobile
+* l'explosion du nombre de fonctionnalités sur smartphone…
+* …mis en parallèle avec la faible évolution des systèmes d'interaction sur les sites mobiles
+* des exemples concrets de systèmes tirant parti des nouvelles fonctionnalités mobiles (authentification avec Touch ID, Face ID, simplification des formulaires de commandes)…
