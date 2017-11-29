@@ -1,0 +1,64 @@
+Réduire le nombre de champs :
+* garder différentes informations dans un seul champ (nom au lieu de nom + prénom, adresse de l'API places au lieu de voie/rue/code postal/ville ou autocomplétion ville + région à partir du code postal)
+* remplacer le champ de confirmation de l'email par un système d'autocomplétion des mails les plus utilisés + une suggestion "did you mean…?" si le mail n'est pas dans la base. Taper sur la suggestion pour corriger
+* CB : utiliser Scan Credit Card et un masque sur le champ
+   Détection automatique du type de carte au moment de la saisie du numéro. Si le numéro saisi est valide, slide automatique dans le même champ sur les trois chiffres et la date
++ save for later options
+
+Exemples de NUI :
+* Le bouton pour commander du Dash sur Amazon
+* Le magasin sans caisse d'Amazon
+* Les earpods d'Apple qui s'appairent automatiquement en ouvrant la boîte, lancent automatiquement la musique quand on les met, et se chargent en les rangeant dans leur étui
+* Google Home avec la reconnaissance vocale "Ok google"
+* Le déverrouillage d'un écran par reconnaissance faciale
+* Les lunettes snapchat qui filment quand on tape
+* Le stylet qui au contact de la tablette dévérouille automatiquement celle-ci et affiche l'application de prise de notes
+* La caméra qui détecte automatiquement la présence de quelqu'un et envoie une notification + un direct live de ce qu'il se passe
+
+
+* Message "What's your adress ?" est lu et interpreté, il ne reste plus qu'à choisir l'adresse à envoyer.
+* Bouton translate pour les messages dans une autre langue
+
+Des interactions simplifiées au maximum. Pourquoi ?
+* les sessions sur mobile sont très courtes et intermittentes
+
+Sur le net les gens détestent :
+* le chargement lent d'une page (46%)
+* les interstitiels (16%)
+* les vidéos qui ne se lancent pas (14%)
+* être redirigé à la page d'accueil (13%)
+* autre (11%)
+
+Attendre le chargement d'une page sur mobile est l'une des activités les plus stressantes
+Temps moyen d'une interaction mobile 38s
+smartwatch 7s
+
+Sur smartwatch c'est donc encore plus important.
+* Réduire les options : Sauver ou Discard est remplacé par Done (sauvegardé par défaut)
+* Mettre en avant l'option déjà choisie précédemment (et donc susceptible d'être réutilisée)
+* Utiliser les capteurs : Apple watch : accelerometre, GPS, magnetometre, haptic engine…
+
+Difficile à rentabiliser car :
+25% des applications mobiles sont utilisées seulement une fois
+37% sont utilisées plus de 11 fois
+45% du temps passé sur les applications se passe sur une seule d'entre elles
+84% du temps passé sur les applications se passe sur 5 d'entre elles
+77% des utilisateurs sont perdus dans les 3 jours suivant l'installation
+95% des utilisateurs sont perdus dans les 3 mois suivant l'installation
+65,5% des utilisateurs ne téléchargent aucune application par mois en moyenne
+
+Le natif plus intéressant que les web apps ?
+En terme de temps passé dessus et d'implication utilisateur : 186.9 min sur natif, 11.9 sur hybride (x20).
+Pour augmenter son audience : web
+
+Stratégies :
+* les interstitiels : fonctionnent mais font fuir une large partie du public
+* les SMS : utilisés à la base pour alerter de l'arrivée de trucmuche, puis pour faire la promo d'une application d'alerte
+
+Adapter l'expérience à son public :
+Les plus de 65 ans utilisent leur téléphone à deux mains et se servent en majorité d'un ordinateur
+Les 18-25 utilisent leur téléphone à une main, se servent en majorité d'un smartphone, et passent 2 fois plus de temps que les +65 devant un écran
+
+Convaincre ?
+* montrer des graphiques aux décisionnaires reprenant ces données
+* des avis d'utilisateurs
